@@ -7,6 +7,7 @@ import argparse
 
 json_url_file = "paper_uri_list.json"
 parameters_to_extract = ["title", "author", "journal", "impact factor", "citations", "publishing date"]
+commands_to_extract = ["article_html.h1.span.text", ""]
 paper_information_dict = {}
 
 
@@ -14,19 +15,42 @@ def read_papers_urls(url_file):
     with open(url_file) as f:
         return json.load(f)
 
+
 def write_paper_parameters_to_json(parameter_dict):
     with open("paper_information.json", "w") as f:
         json.dump(parameter_dict, f)
 
 
-def getTitle(articles_html):
+# +++ Gather Information +++
+# def getParameters(article_html):
+#     """Gathers all the parameters defined in 'parameters_to_extract'"""
+#     paper_information = {}
+
+#     return
+
+
+
+def getTitle(article_html):
     """Returns the title of the paper"""
-    return articles_html.h1.span.text
+    return article_html.h1.span.text
 
 
 def getAuthors(articles_html):
     """Returns the authors of the article"""
-    return articles_html.
+    author_list = []
+    names_list = []
+    # Get the <span> Element of the authors section
+    authors_spans = articles_html.findAll("span", ["given-name", "surname"])
+
+    # Extract names and put the as tuple in new list
+    [names_list.append(x.text) for x in authors_spans]
+    author_names_set_list = list(zip(names_list[::2], names_list[1::2]))
+
+    # Join first and surname together
+    for _set in author_names_set_list:
+        author_list.append(" ".join(_set))
+
+    return author_list
 
 
 def getJournal(articles_html):
@@ -63,12 +87,9 @@ def gather_information_from_page(link):
     articles_content = soup.find('article')
 
     # Add the parameters of the paper to the paper_information dictionary
-    for parameter in parameters_to_extract:
-        paper_information[parameter] =
-        # +++ FInd a way to reliably iterate over the already defined functions! +++
-    # paper_information["title"] = getTitle(articles_content)
-    # paper_information["authors"] = getAuthors(articles_content)
-    # paper_information["journal"] = getJournal(soup)
+    paper_information["title"] = getTitle(articles_content)
+    paper_information["authors"] = getAuthors(articles_content)
+    paper_information["journal"] = getJournal(soup)
     # paper_information["journal_impact_factor"] = getImpactFactor(soup)
     # paper_information["citations"] = getAmountCitations(soup)
 

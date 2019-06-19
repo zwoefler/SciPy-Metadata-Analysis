@@ -1,6 +1,9 @@
 import json
+import os
+import argparse
 
-bookmark_json = "bookmarks-2019-06-18.json"
+data_dir = "resources"
+bookmark_json = os.path.join(data_dir, "bookmarks-2019-06-18.json")
 
 
 def read_path_json(source_json):
@@ -28,6 +31,24 @@ def extract_paper_urls(data):
             paper_uri_list.append(item["uri"])
     return paper_uri_list
 
+
+
+
+
+# +++ Implement argparse +++
+# ===Argparse===
+parser = argparse.ArgumentParser(
+    description='Returns a list of all found scientific papers in the bookmarks',
+    usage=''
+)
+parser.add_argument(
+    '-b',
+    '--bookmarks', type=str, help='Path to the bookmark source file to extract the booksmarks from',
+    required='True')
+parser.add_argument(
+    '-d', '--destination', type=str, help='export destination for all scripts', default=os.path.join(data_dir, 'paper_uri_list.json')
+)
+args = parser.parse_args()
 
 def main():
     bookmark_json_data = read_path_json(bookmark_json)
