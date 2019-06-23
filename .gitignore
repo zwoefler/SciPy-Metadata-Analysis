@@ -1,5 +1,5 @@
 paths_and_data.json
-bookmarks-2019-06-18.json
+resources/bookmarks.json
 *.ipynb
 paper_uri_list.json
 *.log
