@@ -10,4 +10,4 @@ stages:
 pylint:
   stage: "lint"
   script:
-    - "pylint"
+    - "pylint firefox_bookmarks_from_profile"
