@@ -7,7 +7,8 @@ install:
 stages:
   - lint
 
-pylint:
-  stage: lint
-  script:
-    - "pylint firefox_bookmarks_from_profile.py"
+jobs:
+  include:
+    stage: lint
+    script:
+      - "pylint firefox_bookmarks_from_profile.py"
