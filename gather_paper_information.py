@@ -64,10 +64,9 @@ def getPublishingDate(html_article):
     return
 
 
-def gather_information_from_page(link):
+def gather_information_from_page(link, driver):
     """Returns a dictionary about the paper for ONE given link"""
     paper_information = {}
-    driver = webdriver.Firefox()
     driver.get(link)
     html_page = driver.execute_script("return document.documentElement.outerHTML")
 
@@ -89,8 +88,9 @@ def gather_information_from_page(link):
 
 def main():
     url_list = read_papers_urls(json_url_file)
+    driver = webdriver.Firefox()
     for paper in url_list:
-        paper_parameters = gather_information_from_page(paper)
+        paper_parameters = gather_information_from_page(paper, driver)
         paper_information_dict[paper_parameters["title"]] = paper_parameters
 
     write_paper_parameters_to_json(paper_information_dict)
