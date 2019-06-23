@@ -11,4 +11,4 @@ jobs:
   include:
     stage: lint
     script:
-      - "pylint ."
+      - "pylint"
