@@ -1,11 +1,14 @@
+dist: xenial
 language: python
-
+python:
+  - "3.7"
+install:
+  - pip install -r requirements.txt
+  - pip install .
 stages:
   -lint
 
 pylint:
-  image: "python:latest"
   stage: "lint"
   script:
-    - pip3 install pylint
-    - pylint .
+    - "pylint"
