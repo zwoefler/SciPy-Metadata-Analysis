@@ -3,7 +3,7 @@ import os
 import argparse
 
 data_dir = "resources"
-bookmark_json = os.path.join(data_dir, "bookmarks-2019-06-18.json")
+#bookmark_json = os.path.join(data_dir, "bookmarks-2019-06-18.json")
 
 
 def read_path_json(source_json):
@@ -32,9 +32,6 @@ def extract_paper_urls(data):
     return paper_uri_list
 
 
-
-
-
 # +++ Implement argparse +++
 # ===Argparse===
 parser = argparse.ArgumentParser(
@@ -50,10 +47,13 @@ parser.add_argument(
 )
 args = parser.parse_args()
 
+
 def main():
+    bookmark_json = args.bookmarks
     bookmark_json_data = read_path_json(bookmark_json)
     papers_uri_list = extract_paper_urls(bookmark_json_data)
     write_to_json(papers_uri_list)
+    print("Successfully extracted the relevant booksmarks into paper_uri_list.json")
 
 
 if __name__ == "__main__":
