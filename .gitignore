@@ -3,3 +3,4 @@ resources/bookmarks.json
 *.ipynb
 paper_uri_list.json
 *.log
+*.json
