@@ -5,9 +5,8 @@ from bs4 import BeautifulSoup
 from selenium import webdriver
 import argparse
 
-json_url_file = "paper_uri_list.json"
+json_url_file = "resources/test_urls.json"
 parameters_to_extract = ["title", "author", "journal", "impact factor", "citations", "publishing date"]
-commands_to_extract = ["article_html.h1.span.text", ""]
 paper_information_dict = {}
 
 
@@ -19,15 +18,6 @@ def read_papers_urls(url_file):
 def write_paper_parameters_to_json(parameter_dict):
     with open("paper_information.json", "w") as f:
         json.dump(parameter_dict, f)
-
-
-# +++ Gather Information +++
-# def getParameters(article_html):
-#     """Gathers all the parameters defined in 'parameters_to_extract'"""
-#     paper_information = {}
-
-#     return
-
 
 
 def getTitle(article_html):
@@ -92,7 +82,7 @@ def gather_information_from_page(link):
     paper_information["authors"] = getAuthors(articles_content)
     paper_information["journal"] = getJournal(articles_content)
     # paper_information["journal_impact_factor"] = getImpactFactor(soup)
-    paper_information["citations"] = getCitationsAmount(soup)
+    # paper_information["citations"] = getCitationsAmount(soup)
 
     return paper_information
 
@@ -100,12 +90,14 @@ def gather_information_from_page(link):
 def main():
     url_list = read_papers_urls(json_url_file)
     for paper in url_list:
-        paper_parameters = gather_information_from_page(url_list)
+        paper_parameters = gather_information_from_page(paper)
         paper_information_dict[paper_parameters["title"]] = paper_parameters
 
+    write_paper_parameters_to_json(paper_information_dict)
 
 if __name__ == "__main__":
     main()
+
 
 # +++ TODO +++
 # Implement Argparse for:
