@@ -55,7 +55,7 @@ def getAuthors(articles_html):
 
 def getJournal(articles_html):
     """Returns the name of the journal were the paper has been published"""
-    return
+    return articles_html.find("h2", "publication-title").a.text
 
 
 def getImpactFactor(article_html):
@@ -63,8 +63,9 @@ def getImpactFactor(article_html):
     return
 
 
-def getCitationsAmount(article_html):
+def getCitationsAmount(paper_html):
     """Returns the amount of citations of the given paper"""
+    paper_html.find()
     return
 
 
@@ -89,9 +90,9 @@ def gather_information_from_page(link):
     # Add the parameters of the paper to the paper_information dictionary
     paper_information["title"] = getTitle(articles_content)
     paper_information["authors"] = getAuthors(articles_content)
-    paper_information["journal"] = getJournal(soup)
+    paper_information["journal"] = getJournal(articles_content)
     # paper_information["journal_impact_factor"] = getImpactFactor(soup)
-    # paper_information["citations"] = getAmountCitations(soup)
+    paper_information["citations"] = getCitationsAmount(soup)
 
     return paper_information
 
