@@ -7,14 +7,14 @@ data_dir = "resources"
 
 
 def read_path_json(source_json):
-    with open(source_json) as f:
-        data = json.load(f)
+    with open(source_json) as file:
+        data = json.load(file)
     return data
 
 
 def write_to_json(data):
-    with open('paper_uri_list.json', 'w') as f:
-        json.dump(data, f)
+    with open('paper_uri_list.json', 'w') as file:
+        json.dump(data, file)
 
 
 def extract_paper_urls(data):
@@ -49,6 +49,7 @@ args = parser.parse_args()
 
 
 def main():
+    """The main function"""
     bookmark_json = args.bookmarks
     bookmark_json_data = read_path_json(bookmark_json)
     papers_uri_list = extract_paper_urls(bookmark_json_data)
