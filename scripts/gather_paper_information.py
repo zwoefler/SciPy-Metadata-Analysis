@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 from selenium import webdriver
 import argparse
 
-json_url_file = "resources/test_urls.json"
+json_url_file = "../resources/test_urls.json"
 parameters_to_extract = ["title", "author", "journal", "impact factor", "citations", "publishing date"]
 paper_information_dict = {}
 
