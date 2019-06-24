@@ -2,6 +2,7 @@
 
 bookmarks_file="resources/bookmarks.json"
 python3 firefox_bookmarks_from_profile.py -b "$bookmarks_file"
+python3 gather_paper_information.py
 
 
 # Get bookmarks_file and put it into firefox_bookmarks_from_file
