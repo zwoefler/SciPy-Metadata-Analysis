@@ -53,17 +53,17 @@ def get_journal(articles_html):
 
 def get_impact_factor():
     """Returns the Impact factor of the journal were the paper has been published"""
-    pass
+    return
 
 
 def get_citations_amount():
     """Returns the amount of citations of the given paper"""
-    pass
+    return
 
 
 def get_publishing_date():
     """Returns the Date of publishing"""
-    pass
+    return
 
 
 def gather_information_from_page(link, driver):
