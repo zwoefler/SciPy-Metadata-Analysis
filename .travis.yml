@@ -11,4 +11,4 @@ jobs:
   include:
     stage: lint
     script:
-      - "pylint firefox_bookmarks_from_profile.py"
+      - "pylint ./scripts"
