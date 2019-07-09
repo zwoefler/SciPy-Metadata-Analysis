@@ -6,4 +6,4 @@ python3 scripts/firefox_bookmarks_from_profile.py -b "$bookmarks_file"
 json_url_file="resources/test_urls.json"
 export_json_file_name="paper_information.json"
 
-python3 scripts/gather_paper_information.py -u "$json_url_file" -d "$export_json_file_name"
+python3 scripts/gather_paper_information.py -u "$json_url_file" -e "$export_json_file_name"

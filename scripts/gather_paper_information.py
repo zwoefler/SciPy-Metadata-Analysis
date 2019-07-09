@@ -100,19 +100,19 @@ def main():
         '-u',
         '--url_list',
         type=str,
-        help='Path to the URL-JSON file with all the relevant scientific papers',
+        help='Takes a URL-JSON file with a list of links',
         required='True'
     )
     parser.add_argument(
-        '-d',
-        '--destination',
+        '-e',
+        '--export_destination',
         type=str,
-        help='export destination for all scripts',
+        help='export destination for the gathered meta data',
         default='paper_information.json'
     )
     args = parser.parse_args()
     url_json_file = args.url_list
-    export_json_file_name = args.destination
+    export_json_file_name = args.export_destination
 
     url_list = read_papers_urls(url_json_file)
     driver = webdriver.Firefox()
