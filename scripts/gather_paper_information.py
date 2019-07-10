@@ -1,6 +1,7 @@
 """This module gathers the paper information extracted from the bookmarks"""
 import argparse
 import json
+from database_classes import ScienceDirectPaper
 from bs4 import BeautifulSoup
 from selenium import webdriver
 
@@ -21,50 +22,6 @@ def write_paper_parameters_to_json(parameter_dict, export_file_name):
         json.dump(parameter_dict, file_object)
 
 
-def get_title(article_html):
-    """Returns the title of the paper"""
-    return article_html.h1.span.text
-
-
-def get_authors(articles_html):
-    """Returns the authors of the article"""
-    author_list = []
-    names_list = []
-    # Get the <span> Element of the authors section
-    authors_spans = articles_html.findAll("span", ["given-name", "surname"])
-
-    # Extract names and put the names as tuple in new list
-    for author_span in authors_spans:
-        names_list.append(author_span.text)
-    author_names_set_list = list(zip(names_list[::2], names_list[1::2]))
-
-    # Join first and surname together
-    for _set in author_names_set_list:
-        author_list.append(" ".join(_set))
-
-    return author_list
-
-
-def get_journal(articles_html):
-    """Returns the name of the journal were the paper has been published"""
-    return articles_html.find("h2", "publication-title").a.text
-
-
-def get_impact_factor():
-    """Returns the Impact factor of the journal were the paper has been published"""
-    return
-
-
-def get_citations_amount():
-    """Returns the amount of citations of the given paper"""
-    return
-
-
-def get_publishing_date():
-    """Returns the Date of publishing"""
-    return
-
-
 def gather_information_from_page(link, driver):
     """Returns a dictionary about the paper for ONE given link"""
     paper_information = {}
@@ -78,9 +35,9 @@ def gather_information_from_page(link, driver):
     articles_content = soup.find('article')
 
     # Add the parameters of the paper to the paper_information dictionary
-    paper_information["title"] = get_title(articles_content)
-    paper_information["authors"] = get_authors(articles_content)
-    paper_information["journal"] = get_journal(articles_content)
+    paper_information["title"] = SCIDIRECT.get_title(articles_content)
+    paper_information["authors"] = SCIDIRECT.get_authors(articles_content)
+    # paper_information["journal"] = get_journal(articles_content)
     # paper_information["journal_impact_factor"] = getImpactFactor(soup)
     # paper_information["citations"] = getCitationsAmount(soup)
 
@@ -90,6 +47,7 @@ def gather_information_from_page(link, driver):
 def main():
     """This is the main function thats gathers the paper
     information based on the extracted booksmarks"""
+
 
     parser = argparse.ArgumentParser(
         description='''Returns a JSON file with all the relevant meta data of an URL
@@ -125,4 +83,7 @@ def main():
     driver.quit()
 
 if __name__ == "__main__":
+    SCIDIRECT = ScienceDirectPaper()
     main()
+
+
