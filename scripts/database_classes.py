@@ -1,52 +1,51 @@
 """This module aims to provide classes to gather information for the different scientific
 databases. Scince the different Research-Databases have there differences in presenting
 their papers there need to be different ways of retreiving the data"""
-from selenium import webdriver
+from abc import ABCMeta, abstractmethod
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
-from abc import ABCMeta, abstractmethod
 
 class PaperMetaData(metaclass=ABCMeta):
     """This is an abstract class for the meta information from scientific papers"""
 
     @abstractmethod
-    def get_title(self):
+    def get_title(self, selenium_driver):
         """Returns the title of the paper"""
         pass
 
 
     @abstractmethod
-    def get_authors(self):
+    def get_authors(self, selenium_driver):
         """Returns the authors of the article"""
 
 
     @abstractmethod
-    def get_journal(self):
+    def get_journal(self, selenium_driver):
         """Returns the name of the journal were the paper has been published"""
         pass
 
 
     @abstractmethod
-    def get_impact_factor(self):
+    def get_impact_factor(self, selenium_driver):
         """Returns the Impact factor of the journal were the paper has been published"""
         pass
 
 
     @abstractmethod
-    def get_citations_amount(self):
+    def get_citations_amount(self, selenium_driver):
         """Returns the amount of citations of the given paper"""
         pass
 
 
     @abstractmethod
-    def get_publishing_date(self):
+    def get_publishing_date(self, selenium_driver):
         """Returns the Date of publishing"""
         pass
 
 
     @abstractmethod
-    def get_paper_keyword_list(self):
+    def get_paper_keyword_list(self, selenium_driver):
         """Returns a list of the given keywords or None"""
         pass
 
@@ -79,12 +78,12 @@ class ScienceDirectPaper(PaperMetaData):
         return authors_list
 
 
-    def get_journal(self, articles_html):
+    def get_journal(self, selenium_driver):
         """Returns the name of the journal were the paper has been published"""
         return
 
 
-    def get_impact_factor(self):
+    def get_impact_factor(self, selenium_driver):
         """Returns the Impact factor of the journal were the paper has been published"""
         return
 
@@ -92,14 +91,16 @@ class ScienceDirectPaper(PaperMetaData):
     def get_citations_amount(self, selenium_driver):
         """Returns the amount of citations of the given paper"""
         class_count = WebDriverWait(selenium_driver, 10).until(
-            EC.visibility_of_element_located((By.XPATH, "/html/body/div[3]/div/div/section/div[1]/div[2]/div[2]/aside/section[3]/div/div/div/div/div[2]/div[1]/div/ul/li/span[2]"))
+            EC.visibility_of_element_located(
+                (By.XPATH, """/html/body/div[3]/div/div/section/div[1]/div[2]/div[2]
+                /aside/section[3]/div/div/div/div/div[2]/div[1]/div/ul/li/span[2]"""))
         )
         return class_count.text
 
 
-    def get_publishing_date(self, ):
+    def get_publishing_date(self, selenium_driver):
         """Returns the Date of publishing"""
         return
 
-    def get_paper_keyword_list(self, soup_object):
+    def get_paper_keyword_list(self, selenium_driver):
         """Returns a list of the given keywords or None"""

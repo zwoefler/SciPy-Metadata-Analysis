@@ -1,11 +1,9 @@
 """This module gathers the paper information extracted from the bookmarks"""
 import argparse
 import json
-from database_classes import ScienceDirectPaper
 from selenium import webdriver
-from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.by import By
+from database_classes import ScienceDirectPaper
+
 
 PARAMETERS_TO_EXTRACT = [
     "title", "author", "journal", "impact factor", "citations", "publishing date"]
@@ -80,5 +78,3 @@ def main():
 if __name__ == "__main__":
     SCIDIRECT = ScienceDirectPaper()
     main()
-
-
