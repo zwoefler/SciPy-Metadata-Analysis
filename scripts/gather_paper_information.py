@@ -2,8 +2,10 @@
 import argparse
 import json
 from database_classes import ScienceDirectPaper
-from bs4 import BeautifulSoup
 from selenium import webdriver
+from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.by import By
 
 PARAMETERS_TO_EXTRACT = [
     "title", "author", "journal", "impact factor", "citations", "publishing date"]
@@ -26,20 +28,13 @@ def gather_information_from_page(link, driver):
     """Returns a dictionary about the paper for ONE given link"""
     paper_information = {}
     driver.get(link)
-    html_page = driver.execute_script("return document.documentElement.outerHTML")
-
-    # Create Soup Object
-    soup = BeautifulSoup(html_page, 'html.parser')
-
-    # Create articles content
-    articles_content = soup.find('article')
 
     # Add the parameters of the paper to the paper_information dictionary
-    paper_information["title"] = SCIDIRECT.get_title(articles_content)
-    paper_information["authors"] = SCIDIRECT.get_authors(articles_content)
-    # paper_information["journal"] = get_journal(articles_content)
+    paper_information["title"] = SCIDIRECT.get_title(driver)
+    paper_information["authors"] = SCIDIRECT.get_authors(driver)
+    # paper_information["journal"] = SCIDIRECT.get_journal(driver)
     # paper_information["journal_impact_factor"] = getImpactFactor(soup)
-    # paper_information["citations"] = getCitationsAmount(soup)
+    paper_information["citations"] = SCIDIRECT.get_citations_amount(driver)
 
     return paper_information
 

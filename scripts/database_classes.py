@@ -1,7 +1,10 @@
 """This module aims to provide classes to gather information for the different scientific
 databases. Scince the different Research-Databases have there differences in presenting
 their papers there need to be different ways of retreiving the data"""
-
+from selenium import webdriver
+from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.by import By
 from abc import ABCMeta, abstractmethod
 
 class PaperMetaData(metaclass=ABCMeta):
@@ -42,39 +45,43 @@ class PaperMetaData(metaclass=ABCMeta):
         pass
 
 
+    @abstractmethod
+    def get_paper_keyword_list(self):
+        """Returns a list of the given keywords or None"""
+        pass
 
 
 
 class ScienceDirectPaper(PaperMetaData):
     """Extract Meta Information from ScienceDirect Papers"""
 
-    def get_title(self, article_html):
+    def get_title(self, selenium_driver):
         """Returns the title of the paper"""
-        return article_html.h1.span.text
+        title = selenium_driver.find_element(By.CLASS_NAME, "title-text").text
+        return title
 
 
-    def get_authors(self, articles_html):
+    def get_authors(self, selenium_driver):
         """Returns the authors of the article"""
-        author_list = []
-        names_list = []
-        # Get the <span> Element of the authors section
-        authors_spans = articles_html.findAll("span", ["given-name", "surname"])
-
-        # Extract names and put the names as tuple in new list
-        for author_span in authors_spans:
-            names_list.append(author_span.text)
-        author_names_set_list = list(zip(names_list[::2], names_list[1::2]))
-
-        # Join first and surname together
-        for _set in author_names_set_list:
-            author_list.append(" ".join(_set))
-
-        return author_list
+        authors_list = []
+        author_div = selenium_driver.find_elements(By.ID, "author-group")
+        for author_link_element in author_div:
+            for author_span in author_link_element.find_elements(By.TAG_NAME, "a"):
+                span_context = author_span.find_element(By.TAG_NAME, "span")
+                first_name = span_context.find_element(By.CLASS_NAME, "given-name").text
+                surname = span_context.find_element(By.CLASS_NAME, "surname").text
+                author_dict = {
+                    "surname": surname,
+                    "first_name": first_name
+                }
+                authors_list.append(author_dict)
+        print(authors_list)
+        return authors_list
 
 
     def get_journal(self, articles_html):
         """Returns the name of the journal were the paper has been published"""
-        return articles_html.find("h2", "publication-title").a.text
+        return
 
 
     def get_impact_factor(self):
@@ -82,11 +89,17 @@ class ScienceDirectPaper(PaperMetaData):
         return
 
 
-    def get_citations_amount(self):
+    def get_citations_amount(self, selenium_driver):
         """Returns the amount of citations of the given paper"""
-        return
+        class_count = WebDriverWait(selenium_driver, 10).until(
+            EC.visibility_of_element_located((By.XPATH, "/html/body/div[3]/div/div/section/div[1]/div[2]/div[2]/aside/section[3]/div/div/div/div/div[2]/div[1]/div/ul/li/span[2]"))
+        )
+        return class_count.text
 
 
-    def get_publishing_date(self):
+    def get_publishing_date(self, ):
         """Returns the Date of publishing"""
         return
+
+    def get_paper_keyword_list(self, soup_object):
+        """Returns a list of the given keywords or None"""
