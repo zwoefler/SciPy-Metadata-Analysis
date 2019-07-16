@@ -36,7 +36,6 @@ def extract_paper_urls(data):
 # ===Argparse===
 
 
-
 def main():
     """The main function"""
     data_dir = "resources"
