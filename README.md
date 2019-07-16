@@ -1,3 +1,5 @@
+[![PyLint Status](https://travis-ci.org/zwoefler/SciPy-Metadata-Analysis.svg?branch=master)](https://travis-ci.org/zwoefler/SciPy-Metadata-Analysis)
+
 # Goals
 This repository aims to provide a scientific meta data analysis over saved sources in your booksmarks. For Goals, you might read the section [Origins of the Idea](#Origins-of-the-Idea).
 
