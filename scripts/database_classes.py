@@ -12,7 +12,6 @@ class PaperMetaData(metaclass=ABCMeta):
     @abstractmethod
     def get_title(self, selenium_driver):
         """Returns the title of the paper"""
-        pass
 
 
     @abstractmethod
@@ -23,31 +22,26 @@ class PaperMetaData(metaclass=ABCMeta):
     @abstractmethod
     def get_journal(self, selenium_driver):
         """Returns the name of the journal were the paper has been published"""
-        pass
 
 
     @abstractmethod
     def get_impact_factor(self, selenium_driver):
         """Returns the Impact factor of the journal were the paper has been published"""
-        pass
 
 
     @abstractmethod
     def get_citations_amount(self, selenium_driver):
         """Returns the amount of citations of the given paper"""
-        pass
 
 
     @abstractmethod
     def get_publishing_date(self, selenium_driver):
         """Returns the Date of publishing"""
-        pass
 
 
     @abstractmethod
     def get_paper_keyword_list(self, selenium_driver):
         """Returns a list of the given keywords or None"""
-        pass
 
 
 
