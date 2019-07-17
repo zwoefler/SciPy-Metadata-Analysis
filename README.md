@@ -11,4 +11,5 @@ My Bachelorthesis needed an meta data-analysis over all the relevant papers that
 Since I already know the Pandas library for Python3, I wanted to gather the data as automatically as possible. Furthermore I was able to expand my knowledge in the field of webscrapping with `Selenium`.
 
 # Lessons Learned
-1. Improved my skills in Webscrapping with `Selenium`
+1. Improved my skills in Webscrapping with `Selenium`.
+2. `Beautiful Soup` is not suitable for dynamic (JavaScript generated) webpage content
