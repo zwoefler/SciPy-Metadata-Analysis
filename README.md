@@ -13,3 +13,5 @@ Since I already know the Pandas library for Python3, I wanted to gather the data
 # Lessons Learned
 1. Improved my skills in Webscrapping with `Selenium`.
 2. `Beautiful Soup` is not suitable for dynamic (JavaScript generated) webpage content
+
+#
