@@ -4,3 +4,5 @@ resources/bookmarks.json
 paper_uri_list.json
 *.log
 *.json
+*/*init*
+*/*pycache*

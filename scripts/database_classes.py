@@ -20,12 +20,12 @@ class PaperMetaData(metaclass=ABCMeta):
 
 
     @abstractmethod
-    def get_journal(self, selenium_driver):
+    def get_journal_name(self, selenium_driver):
         """Returns the name of the journal were the paper has been published"""
 
 
     @abstractmethod
-    def get_impact_factor(self, selenium_driver):
+    def get_journal_impact_factor(self, selenium_driver):
         """Returns the Impact factor of the journal were the paper has been published"""
 
 
@@ -42,6 +42,11 @@ class PaperMetaData(metaclass=ABCMeta):
     @abstractmethod
     def get_paper_keyword_list(self, selenium_driver):
         """Returns a list of the given keywords or None"""
+
+
+    @abstractmethod
+    def get_paper_doi(self, selenium_driver):
+        """Returns the DOI of the given paper"""
 
 
 
@@ -68,18 +73,25 @@ class ScienceDirectPaper(PaperMetaData):
                     "first_name": first_name
                 }
                 authors_list.append(author_dict)
-        print(authors_list)
         return authors_list
 
 
-    def get_journal(self, selenium_driver):
+    def get_journal_name(self, selenium_driver):
         """Returns the name of the journal were the paper has been published"""
-        return
+        journal_name = selenium_driver.find_element(
+            By.XPATH, '//*[@id="mathjax-container"]/div[2]/article/div[1]/div[2]/h2/a').text
+        print(journal_name)
+        return journal_name
 
 
-    def get_impact_factor(self, selenium_driver):
+    def get_journal_impact_factor(self, selenium_driver):
         """Returns the Impact factor of the journal were the paper has been published"""
-        return
+        journal_link = selenium_driver.find_element_by_class_name("publication-title-link")
+        journal_link.click()
+        impact_factor = selenium_driver.find_element_by_xpath(
+            '//div[@class="move-bottom u-margin-xs-bottom"]/div[2]/button/span/span[1]').text
+        selenium_driver.back()
+        return impact_factor
 
 
     def get_citations_amount(self, selenium_driver):
@@ -94,7 +106,21 @@ class ScienceDirectPaper(PaperMetaData):
 
     def get_publishing_date(self, selenium_driver):
         """Returns the Date of publishing"""
+
         return
 
     def get_paper_keyword_list(self, selenium_driver):
         """Returns a list of the given keywords or None"""
+        keyword_list = []
+        keyword_div = selenium_driver.find_elements_by_class_name("keyword")
+        for div in keyword_div:
+            keyword = div.find_element_by_tag_name("span").text
+            keyword_list.append(keyword)
+
+        return keyword_list
+
+
+    def get_paper_doi(self, selenium_driver):
+        """Returns the DOI of the current Paper"""
+        doi_link = selenium_driver.find_element_by_class_name("doi").text
+        return doi_link
