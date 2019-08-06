@@ -10,6 +10,18 @@ provide a scientific meta data analysis over papers published and accessable via
 My Bachelorthesis needed an meta data-analysis over all the relevant papers that i have found in online databases such as `Science Direct`, `IEEE` and `Springer Online`.
 Since I already know the Pandas library for Python3, I wanted to gather the data as automatically as possible. Furthermore I was able to expand my knowledge in the field of webscrapping with `Selenium`.
 
+# To implement
+- [ ] ScienceDirect Integration
+    - [X] Author names
+    - [X] Paper Title
+    - [ ] DOI
+    - [ ] Keywords
+    - [ ] Publication Date
+    - [ ] Journalname
+    - [ ] Journal Impact Factor
+    - [X] Amount of Citations
+
+
 # Lessons Learned
 1. Improved my skills in Webscrapping with `Selenium`.
 2. `Beautiful Soup` is not suitable for dynamic (JavaScript generated) webpage content

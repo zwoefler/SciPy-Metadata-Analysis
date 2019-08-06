@@ -30,9 +30,11 @@ def gather_information_from_page(link, driver):
     # Add the parameters of the paper to the paper_information dictionary
     paper_information["title"] = SCIDIRECT.get_title(driver)
     paper_information["authors"] = SCIDIRECT.get_authors(driver)
-    # paper_information["journal"] = SCIDIRECT.get_journal(driver)
-    # paper_information["journal_impact_factor"] = getImpactFactor(soup)
+    paper_information["journal"] = SCIDIRECT.get_journal_name(driver)
+    paper_information["journal_impact_factor"] = SCIDIRECT.get_journal_impact_factor(driver)
     paper_information["citations"] = SCIDIRECT.get_citations_amount(driver)
+    paper_information["keywords"] = SCIDIRECT.get_paper_keyword_list(driver)
+    paper_information["doi"] = SCIDIRECT.get_paper_doi(driver)
 
     return paper_information
 
@@ -49,10 +51,13 @@ def main():
     )
     parser.add_argument(
         '-u',
-        '--url_list',
+        '--url_json',
         type=str,
         help='Takes a URL-JSON file with a list of links',
         required='True'
+    )
+    parser.add_argument(
+        '--s',
     )
     parser.add_argument(
         '-e',
@@ -62,7 +67,7 @@ def main():
         default='paper_information.json'
     )
     args = parser.parse_args()
-    url_json_file = args.url_list
+    url_json_file = args.url_json
     export_json_file_name = args.export_destination
 
     url_list = read_papers_urls(url_json_file)
