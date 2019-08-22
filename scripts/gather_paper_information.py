@@ -34,6 +34,7 @@ def gather_information_from_page(link, driver):
     paper_information["journal_impact_factor"] = SCIDIRECT.get_journal_impact_factor(driver)
     paper_information["citations"] = SCIDIRECT.get_citations_amount(driver)
     paper_information["keywords"] = SCIDIRECT.get_paper_keyword_list(driver)
+    paper_information["publishing_date"] = SCIDIRECT.get_publishing_date(driver)
     paper_information["doi"] = SCIDIRECT.get_paper_doi(driver)
 
     return paper_information

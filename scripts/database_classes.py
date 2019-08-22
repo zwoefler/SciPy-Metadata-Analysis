@@ -98,7 +98,7 @@ class ScienceDirectPaper(PaperMetaData):
         """Returns the amount of citations of the given paper"""
         class_count = WebDriverWait(selenium_driver, 10).until(
             EC.visibility_of_element_located(
-                (By.XPATH, """/html/body/div[3]/div/div/section/div[1]/div[2]/div[2]
+                (By.XPATH, """//*[@id="mathjax-container"]/div[2]/div[2]
                 /aside/section[3]/div/div/div/div/div[2]/div[1]/div/ul/li/span[2]"""))
         )
         return class_count.text
@@ -106,8 +106,12 @@ class ScienceDirectPaper(PaperMetaData):
 
     def get_publishing_date(self, selenium_driver):
         """Returns the Date of publishing"""
-
-        return
+        publishing_info_div = '//*[@id="mathjax-container"]/div[2]/article/div[1]/div[2]/div'
+        publishing_info_text = selenium_driver.find_element_by_xpath(publishing_info_div).text
+        publish_date = publishing_info_text.split(',')[1].strip()
+        #Regex also possible
+        publish_year = publish_date.split(' ')[1]
+        return publish_year
 
     def get_paper_keyword_list(self, selenium_driver):
         """Returns a list of the given keywords or None"""
