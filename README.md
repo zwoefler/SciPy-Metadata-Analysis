@@ -2,6 +2,10 @@
 # SciPy Metadata Analysis
 This repository extracts metadata information from scientifc papers throughout scientific databases and analyses them with pandas
 
+# How To Implement
+
+
+
 # Goal
 This repository provides Python3 classes to scrap meta data information from scientific papers.
 provide a scientific meta data analysis over papers published and accessable via their scientific database website, like Sciencesaved sources in my booksmarks. For Goals, you might read the section [Origins of the Idea](#Origins-of-the-Idea).
@@ -14,11 +18,11 @@ Since I already know the Pandas library for Python3, I wanted to gather the data
 - [ ] ScienceDirect Integration
     - [X] Author names
     - [X] Paper Title
-    - [ ] DOI
-    - [ ] Keywords
+    - [X] DOI
+    - [X] Keywords
     - [ ] Publication Date
     - [ ] Journalname
-    - [ ] Journal Impact Factor
+    - [X] Journal Impact Factor
     - [X] Amount of Citations
 
 
