@@ -5,4 +5,6 @@ paper_uri_list.json
 *.log
 *.json
 */*init*
-*/*pycache*
+scripts/__pycache__/*
+SciPyenv/
+scripts/__pycache__/database_classes.cpython-36.pyc
