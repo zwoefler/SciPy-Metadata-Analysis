@@ -2,8 +2,12 @@
 # SciPy Metadata Analysis
 This repository extracts metadata information from scientifc papers throughout scientific databases and analyses them with pandas
 
-# How To Implement
+# Current objective
+Transform the project, so that the buildscript gets a file with a link list, determines the scientific database and extracts all
+relevant metadata into a json-file, containing all the meta information.
 
+# How To Implement
+INSTALLATION WILL FOLLOW
 
 
 # Goal
@@ -15,7 +19,7 @@ My Bachelorthesis needed an meta data-analysis over all the relevant papers that
 Since I already know the Pandas library for Python3, I wanted to gather the data as automatically as possible. Furthermore I was able to expand my knowledge in the field of webscrapping with `Selenium`.
 
 # To implement
-- [X] ScienceDirect Integration
+- [X] ScienceDirect Integration:
     - [X] Author names
     - [X] Paper Title
     - [X] DOI
@@ -25,6 +29,25 @@ Since I already know the Pandas library for Python3, I wanted to gather the data
     - [X] Journal Impact Factor
     - [X] Amount of Citations
 
+- [ ] IEEE Integration:
+    - [ ] Author names
+    - [ ] Paper Title
+    - [ ] DOI
+    - [ ] Keywords
+    - [ ] Publication Date
+    - [ ] Journalname
+    - [ ] Journal Impact Factor
+    - [ ] Amount of Citations
+
+- [ ] SpringerLink:
+    - [ ] Author names
+    - [ ] Paper Title
+    - [ ] DOI
+    - [ ] Keywords
+    - [ ] Publication Date
+    - [ ] Journalname
+    - [ ] Journal Impact Factor
+    - [ ] Amount of Citations
 
 # Lessons Learned
 1. Improved my skills in Webscrapping with `Selenium`.

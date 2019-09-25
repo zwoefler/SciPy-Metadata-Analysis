@@ -1,10 +1,8 @@
-paths_and_data.json
-resources/bookmarks.json
 *.ipynb
-paper_uri_list.json
 *.log
-*.json
 */*init*
 scripts/__pycache__/*
 SciPyenv/
 scripts/__pycache__/database_classes.cpython-36.pyc
+./vscode
+./vscode/*
