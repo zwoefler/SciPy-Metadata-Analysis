@@ -8,6 +8,7 @@ from database_classes import ScienceDirectPaper
 PARAMETERS_TO_EXTRACT = [
     "title", "author", "journal", "impact factor", "citations", "publishing date"]
 PAPER_INFORMATION_DICT = {}
+SUPPORTED_DATABASES = ["sciencedirect", "ieeexplore"]
 
 
 def read_papers_urls(url_file):
@@ -73,14 +74,20 @@ def main():
 
     url_list = read_papers_urls(url_json_file)
     driver = webdriver.Firefox()
-    for paper in url_list:
-        paper_parameters = gather_information_from_page(paper, driver)
-        PAPER_INFORMATION_DICT[paper_parameters["title"]] = paper_parameters
+    scienecedirect_list = []
+    for paper_url in url_list:
+        # paper_parameters = gather_information_from_page(paper_url, driver)
+        driver.get(paper_url)
+        scipap = ScienceDirectPaper(paper_url, driver)
+        print(scipap.__dict__)
+        scienecedirect_list.append(scipap.__dict__)
 
+    # write_paper_parameters_to_json(PAPER_INFORMATION_DICT, export_json_file_name)
+    PAPER_INFORMATION_DICT["ScienceDirect"] = scienecedirect_list
     write_paper_parameters_to_json(PAPER_INFORMATION_DICT, export_json_file_name)
     print("Successfully exported the paper information to", export_json_file_name)
     driver.quit()
 
 if __name__ == "__main__":
-    SCIDIRECT = ScienceDirectPaper()
+    # SCIDIRECT = ScienceDirectPaper()
     main()
