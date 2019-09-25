@@ -1,6 +1,8 @@
 """This module aims to provide classes to gather information for the different scientific
 databases. Scince the different Research-Databases have there differences in presenting
 their papers there need to be different ways of retreiving the data"""
+# pylint: disable=too-many-instance-attributes
+
 from abc import ABCMeta, abstractmethod
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -149,42 +151,35 @@ class IEEEPaper(PaperMetaData):
     def get_title(self, selenium_driver):
         """Returns the title of the paper"""
         title_div = selenium_driver.find_element(
-                By.CLASS_NAME, 
-                "document-title")
+            By.CLASS_NAME,
+            "document-title")
         title_text = title_div.find_element(By.TAG_NAME, "span").text
         return title_text
 
 
-    
     def get_authors(self, selenium_driver):
         """Returns the authors of the article"""
 
 
-    
     def get_journal_name(self, selenium_driver):
         """Returns the name of the journal were the paper has been published"""
 
 
-    
     def get_journal_impact_factor(self, selenium_driver):
         """Returns the Impact factor of the journal were the paper has been published"""
 
 
-    
     def get_citations_amount(self, selenium_driver):
         """Returns the amount of citations of the given paper"""
 
 
-    
     def get_publishing_date(self, selenium_driver):
         """Returns the Date of publishing"""
 
 
-    
     def get_paper_keyword_list(self, selenium_driver):
         """Returns a list of the given keywords or None"""
 
 
-    
     def get_paper_doi(self, selenium_driver):
         """Returns the DOI of the given paper"""

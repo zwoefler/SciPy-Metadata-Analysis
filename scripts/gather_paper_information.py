@@ -23,24 +23,6 @@ def write_paper_parameters_to_json(parameter_dict, export_file_name):
         json.dump(parameter_dict, file_object)
 
 
-def gather_information_from_page(link, driver):
-    """Returns a dictionary about the paper for ONE given link"""
-    paper_information = {}
-    driver.get(link)
-
-    # Add the parameters of the paper to the paper_information dictionary
-    paper_information["title"] = SCIDIRECT.get_title(driver)
-    paper_information["authors"] = SCIDIRECT.get_authors(driver)
-    paper_information["journal"] = SCIDIRECT.get_journal_name(driver)
-    paper_information["journal_impact_factor"] = SCIDIRECT.get_journal_impact_factor(driver)
-    paper_information["citations"] = SCIDIRECT.get_citations_amount(driver)
-    paper_information["keywords"] = SCIDIRECT.get_paper_keyword_list(driver)
-    paper_information["publishing_date"] = SCIDIRECT.get_publishing_date(driver)
-    paper_information["doi"] = SCIDIRECT.get_paper_doi(driver)
-
-    return paper_information
-
-
 def main():
     """This is the main function thats gathers the paper
     information based on the extracted booksmarks"""
@@ -76,18 +58,15 @@ def main():
     driver = webdriver.Firefox()
     scienecedirect_list = []
     for paper_url in url_list:
-        # paper_parameters = gather_information_from_page(paper_url, driver)
         driver.get(paper_url)
         scipap = ScienceDirectPaper(paper_url, driver)
         print(scipap.__dict__)
         scienecedirect_list.append(scipap.__dict__)
 
-    # write_paper_parameters_to_json(PAPER_INFORMATION_DICT, export_json_file_name)
     PAPER_INFORMATION_DICT["ScienceDirect"] = scienecedirect_list
     write_paper_parameters_to_json(PAPER_INFORMATION_DICT, export_json_file_name)
     print("Successfully exported the paper information to", export_json_file_name)
     driver.quit()
 
 if __name__ == "__main__":
-    # SCIDIRECT = ScienceDirectPaper()
     main()
