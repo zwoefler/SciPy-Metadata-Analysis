@@ -2,7 +2,7 @@
 import argparse
 import json
 from selenium import webdriver
-from database_classes import ScienceDirectPaper
+from database_classes import ScienceDirectPaper, IEEEPaper
 
 
 PARAMETERS_TO_EXTRACT = [
@@ -59,11 +59,11 @@ def main():
     scienecedirect_list = []
     for paper_url in url_list:
         driver.get(paper_url)
-        scipap = ScienceDirectPaper(paper_url, driver)
-        print(scipap.__dict__)
-        scienecedirect_list.append(scipap.__dict__)
+        scipaper_obj = IEEEPaper(paper_url, driver)
+        print(scipaper_obj.__dict__)
+        scienecedirect_list.append(scipaper_obj.__dict__)
 
-    PAPER_INFORMATION_DICT["ScienceDirect"] = scienecedirect_list
+    PAPER_INFORMATION_DICT["IEEEPaper"] = scienecedirect_list
     write_paper_parameters_to_json(PAPER_INFORMATION_DICT, export_json_file_name)
     print("Successfully exported the paper information to", export_json_file_name)
     driver.quit()
