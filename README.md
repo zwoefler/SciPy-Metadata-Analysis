@@ -31,13 +31,13 @@ Since I already know the Pandas library for Python3, I wanted to gather the data
 
 - [ ] IEEE Integration:
     - [ ] Author names
-    - [ ] Paper Title
+    - [X] Paper Title
     - [ ] DOI
     - [ ] Keywords
     - [ ] Publication Date
-    - [ ] Journalname
-    - [ ] Journal Impact Factor
-    - [ ] Amount of Citations
+    - [X] Journalname
+    - [X] Journal Impact Factor
+    - [X] Amount of Citations
 
 - [ ] SpringerLink:
     - [ ] Author names
