@@ -2,7 +2,7 @@
 import argparse
 import json
 from selenium import webdriver
-from database_classes import ScienceDirectPaper, IEEEPaper
+from database_classes import IEEEPaper
 
 
 PARAMETERS_TO_EXTRACT = [

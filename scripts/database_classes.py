@@ -7,9 +7,7 @@ from abc import ABCMeta, abstractmethod
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
-from selenium.webdriver.common.action_chains import ActionChains
-from selenium.webdriver.common.keys import Keys
-from selenium.common.exceptions import NoSuchElementException
+from selenium.common.exceptions import TimeoutException
 
 class PaperMetaData(metaclass=ABCMeta):
     """This is an abstract class for the meta information from scientific papers"""
@@ -156,7 +154,7 @@ class IEEEPaper(PaperMetaData):
         self.authors = self.get_authors(selenium_driver)
         self.journal = self.get_journal_name(selenium_driver)
         self.journal_impact_factor = self.get_journal_impact_factor(selenium_driver)
-        # self.citations = self.get_citations_amount(selenium_driver)
+        self.citations = self.get_citations_amount(selenium_driver)
         # self.publish_date = self.get_publishing_date(selenium_driver)
         # self.keywords = self.get_paper_keyword_list(selenium_driver)
         # self.doi = self.get_paper_doi(selenium_driver)
@@ -179,11 +177,10 @@ class IEEEPaper(PaperMetaData):
         )
         for author in author_spans:
             print(author.text)
-
         return 0
 
-
-    def get_journal_link(self, selenium_driver):
+    @staticmethod
+    def get_journal_link(selenium_driver):
         """Returns the link, pointing to the Journalname"""
         published_in_div = selenium_driver.find_element(
             By.XPATH,
@@ -204,21 +201,28 @@ class IEEEPaper(PaperMetaData):
     def get_journal_impact_factor(self, selenium_driver):
         """Returns the Impact factor of the journal were the paper has been published"""
         # Try except for when the jiournal is a conference paper
+        # pylint: disable=pointless-statement
+        # Pylint think *.location_once_scrolled_into_view is pointless
+
         impact_factor = None
         journal_link = self.get_journal_link(selenium_driver)
         journal_link.location_once_scrolled_into_view
         journal_link.click()
 
         try:
-            impact_factor_link = selenium_driver.find_element(
-                By.XPATH,
-                "//a[@class='stats-jhp-impact-factor']"
+            impact_factor_link = WebDriverWait(selenium_driver, 3).until(
+                EC.presence_of_element_located((
+                    By.XPATH,
+                    "//a[@class='stats-jhp-impact-factor']"))
             )
+            impact_factor_link.location_once_scrolled_into_view
             impact_factor = impact_factor_link.text.split()[0]
 
-        except NoSuchElementException as exception:
+        except TimeoutException as exception:
             # Papers without an impact factor are getting cought
-            print("Element not found", exception)
+            print(
+                "Could not find the impact factor on site:",
+                selenium_driver.current_url, exception)
 
         selenium_driver.back()
         return impact_factor
