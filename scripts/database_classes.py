@@ -157,7 +157,7 @@ class IEEEPaper(PaperMetaData):
         self.journal = self.get_journal_name(selenium_driver)
         self.journal_impact_factor = self.get_journal_impact_factor(selenium_driver)
         self.citations = self.get_citations_amount(selenium_driver)
-        # self.publish_date = self.get_publishing_date(selenium_driver)
+        self.publish_date = self.get_publishing_date(selenium_driver)
         self.keywords = self.get_paper_keyword_list(selenium_driver)
         self.doi = self.get_paper_doi(selenium_driver)
 
@@ -241,12 +241,25 @@ class IEEEPaper(PaperMetaData):
 
 
     def get_publishing_date(self, selenium_driver):
-        """Returns the Date of publishing"""
-        publishing_date_div = selenium_driver.find_element(
-            By.CLASS_NAME,
-            "u-pb-1 doc-abstract-pubdate")
-        publishing_date = publishing_date_div.text
-        return publishing_date
+        """Returns the year of publication of teh paper"""
+        try:
+            publishing_date_text = selenium_driver.find_element(
+                By.XPATH,
+                "//div[@class='u-pb-1 doc-abstract-pubdate']"
+                ).text
+        except NoSuchElementException as exception:
+            try:
+                publishing_date_text = selenium_driver.find_element(
+                    By.XPATH,
+                    "//div[@class='u-pb-1 doc-abstract-confdate']"
+                ).text
+            except NoSuchElementException as exception:
+                print("Could not find the paper publishing date, maybe the site is broken \n",
+                      exception)
+
+        publishing_year = publishing_date_text.split()[-1:][0]
+        print(publishing_year)
+        return publishing_year
 
 
     def get_paper_keyword_list(self, selenium_driver):
