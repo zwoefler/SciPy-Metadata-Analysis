@@ -8,7 +8,7 @@ from abc import ABCMeta, abstractmethod
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
-from selenium.common.exceptions import TimeoutException
+from selenium.common.exceptions import TimeoutException, NoSuchElementException
 
 class PaperMetaData(metaclass=ABCMeta):
     """This is an abstract class for the meta information from scientific papers"""
@@ -159,7 +159,7 @@ class IEEEPaper(PaperMetaData):
         self.citations = self.get_citations_amount(selenium_driver)
         # self.publish_date = self.get_publishing_date(selenium_driver)
         self.keywords = self.get_paper_keyword_list(selenium_driver)
-        # self.doi = self.get_paper_doi(selenium_driver)
+        self.doi = self.get_paper_doi(selenium_driver)
 
 
     def get_title(self, selenium_driver):
@@ -277,4 +277,13 @@ class IEEEPaper(PaperMetaData):
 
     def get_paper_doi(self, selenium_driver):
         """Returns the DOI of the given paper"""
-        return
+        try:
+            doi_div_elem = selenium_driver.find_element(
+                By.XPATH,
+                "//div[@class='u-pb-1 stats-document-abstract-doi']")
+            doi = doi_div_elem.find_element(By.TAG_NAME, "a").text
+        except NoSuchElementException as exception:
+            doi = None
+            print("Could not find the doi, probably an IEEE conference paper \n",
+                  exception)
+        return doi
