@@ -3,6 +3,7 @@ databases. Scince the different Research-Databases have there differences in pre
 their papers there need to be different ways of retreiving the data"""
 # pylint: disable=too-many-instance-attributes
 
+
 from abc import ABCMeta, abstractmethod
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -250,6 +251,8 @@ class IEEEPaper(PaperMetaData):
 
     def get_paper_keyword_list(self, selenium_driver):
         """Returns a list of the given keywords or None"""
+        # pylint: disable=pointless-statement
+
         keywords = []
         keyword_expand_button = selenium_driver.find_element(
             By.XPATH,
