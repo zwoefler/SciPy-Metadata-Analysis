@@ -127,6 +127,7 @@ class ScienceDirectPaper(PaperMetaData):
         publish_year = publish_date.split(' ')[1]
         return publish_year
 
+
     def get_paper_keyword_list(self, selenium_driver):
         """Returns a list of the given keywords or None"""
         keyword_list = []
@@ -156,7 +157,7 @@ class IEEEPaper(PaperMetaData):
         self.journal_impact_factor = self.get_journal_impact_factor(selenium_driver)
         self.citations = self.get_citations_amount(selenium_driver)
         # self.publish_date = self.get_publishing_date(selenium_driver)
-        # self.keywords = self.get_paper_keyword_list(selenium_driver)
+        self.keywords = self.get_paper_keyword_list(selenium_driver)
         # self.doi = self.get_paper_doi(selenium_driver)
 
 
@@ -175,9 +176,10 @@ class IEEEPaper(PaperMetaData):
             By.XPATH,
             "//span[@class='authors-info']"
         )
-        for author in author_spans:
-            print(author.text)
-        return 0
+
+        authors_list = [author.text.strip() for author in author_spans]
+        return authors_list
+
 
     @staticmethod
     def get_journal_link(selenium_driver):
@@ -248,9 +250,28 @@ class IEEEPaper(PaperMetaData):
 
     def get_paper_keyword_list(self, selenium_driver):
         """Returns a list of the given keywords or None"""
-        return 0
+        keywords = []
+        keyword_expand_button = selenium_driver.find_element(
+            By.XPATH,
+            "//div[@id='keywords-header']"
+        )
+        keyword_expand_button.location_once_scrolled_into_view
+        keyword_expand_button.click()
+        keyword_sections = keyword_expand_button.find_elements(
+            By.XPATH,
+            "//li[@class='doc-keywords-list-item']"
+        )
+
+        for section in keyword_sections:
+            section_header = section.find_element(By.TAG_NAME, "strong").text
+            if section_header in ["IEEE Keywords", "Author Keywords"]:
+                keyword_list = section.find_elements(
+                    By.XPATH,
+                    ".//a[@class='stats-keywords-list-item']")
+                keywords.extend([keyword.text for keyword in keyword_list])
+        return keywords
 
 
     def get_paper_doi(self, selenium_driver):
         """Returns the DOI of the given paper"""
-        return 0
+        return
