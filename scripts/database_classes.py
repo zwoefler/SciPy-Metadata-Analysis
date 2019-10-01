@@ -157,7 +157,7 @@ class ScienceDirectPaper(PaperMetaData):
         except NoSuchElementException as exception:
             impact_factor = None
             print("Could not find the Impact factor for",
-                exception)
+                  exception)
 
 
         selenium_driver.back()
@@ -335,5 +335,4 @@ class IEEEPaper(PaperMetaData):
                 "Probably a conferencepaper, could not find the impact factor on site:",
                 exception)
 
-        selenium_driver.back()
         return impact_factor
