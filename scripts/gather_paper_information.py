@@ -80,6 +80,7 @@ def main():
         data_base = get_scientific_database_name(paper_url)
         if data_base is not None:
             print("Currently working on: \n", paper_url)
+            driver.implicitly_wait(1)
             driver.get(paper_url)
             scipaper_obj = switch_function_selecting_db_class(data_base, paper_url, driver)
             JSON_EXPORT_LIST.append(scipaper_obj.__dict__)
