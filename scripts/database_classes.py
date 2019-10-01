@@ -3,11 +3,12 @@ databases. Scince the different Research-Databases have there differences in pre
 their papers there need to be different ways of retreiving the data"""
 # pylint: disable=too-many-instance-attributes
 
+
 from abc import ABCMeta, abstractmethod
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
-from selenium.common.exceptions import TimeoutException
+from selenium.common.exceptions import TimeoutException, NoSuchElementException
 
 class PaperMetaData(metaclass=ABCMeta):
     """This is an abstract class for the meta information from scientific papers"""
@@ -127,6 +128,7 @@ class ScienceDirectPaper(PaperMetaData):
         publish_year = publish_date.split(' ')[1]
         return publish_year
 
+
     def get_paper_keyword_list(self, selenium_driver):
         """Returns a list of the given keywords or None"""
         keyword_list = []
@@ -155,9 +157,9 @@ class IEEEPaper(PaperMetaData):
         self.journal = self.get_journal_name(selenium_driver)
         self.journal_impact_factor = self.get_journal_impact_factor(selenium_driver)
         self.citations = self.get_citations_amount(selenium_driver)
-        # self.publish_date = self.get_publishing_date(selenium_driver)
-        # self.keywords = self.get_paper_keyword_list(selenium_driver)
-        # self.doi = self.get_paper_doi(selenium_driver)
+        self.publish_date = self.get_publishing_date(selenium_driver)
+        self.keywords = self.get_paper_keyword_list(selenium_driver)
+        self.doi = self.get_paper_doi(selenium_driver)
 
 
     def get_title(self, selenium_driver):
@@ -175,9 +177,10 @@ class IEEEPaper(PaperMetaData):
             By.XPATH,
             "//span[@class='authors-info']"
         )
-        for author in author_spans:
-            print(author.text)
-        return 0
+
+        authors_list = [author.text.strip() for author in author_spans]
+        return authors_list
+
 
     @staticmethod
     def get_journal_link(selenium_driver):
@@ -238,19 +241,62 @@ class IEEEPaper(PaperMetaData):
 
 
     def get_publishing_date(self, selenium_driver):
-        """Returns the Date of publishing"""
-        publishing_date_div = selenium_driver.find_element(
-            By.CLASS_NAME,
-            "u-pb-1 doc-abstract-pubdate")
-        publishing_date = publishing_date_div.text
-        return publishing_date
+        """Returns the year of publication of teh paper"""
+        try:
+            publishing_date_text = selenium_driver.find_element(
+                By.XPATH,
+                "//div[@class='u-pb-1 doc-abstract-pubdate']"
+                ).text
+        except NoSuchElementException as exception:
+            try:
+                publishing_date_text = selenium_driver.find_element(
+                    By.XPATH,
+                    "//div[@class='u-pb-1 doc-abstract-confdate']"
+                ).text
+            except NoSuchElementException as exception:
+                print("Could not find the paper publishing date, maybe the site is broken \n",
+                      exception)
+
+        publishing_year = publishing_date_text.split()[-1:][0]
+        print(publishing_year)
+        return publishing_year
 
 
     def get_paper_keyword_list(self, selenium_driver):
         """Returns a list of the given keywords or None"""
-        return 0
+        # pylint: disable=pointless-statement
+
+        keywords = []
+        keyword_expand_button = selenium_driver.find_element(
+            By.XPATH,
+            "//div[@id='keywords-header']"
+        )
+        keyword_expand_button.location_once_scrolled_into_view
+        keyword_expand_button.click()
+        keyword_sections = keyword_expand_button.find_elements(
+            By.XPATH,
+            "//li[@class='doc-keywords-list-item']"
+        )
+
+        for section in keyword_sections:
+            section_header = section.find_element(By.TAG_NAME, "strong").text
+            if section_header in ["IEEE Keywords", "Author Keywords"]:
+                keyword_list = section.find_elements(
+                    By.XPATH,
+                    ".//a[@class='stats-keywords-list-item']")
+                keywords.extend([keyword.text for keyword in keyword_list])
+        return keywords
 
 
     def get_paper_doi(self, selenium_driver):
         """Returns the DOI of the given paper"""
-        return 0
+        try:
+            doi_div_elem = selenium_driver.find_element(
+                By.XPATH,
+                "//div[@class='u-pb-1 stats-document-abstract-doi']")
+            doi = doi_div_elem.find_element(By.TAG_NAME, "a").text
+        except NoSuchElementException as exception:
+            doi = None
+            print("Could not find the doi, probably an IEEE conference paper \n",
+                  exception)
+        return doi
