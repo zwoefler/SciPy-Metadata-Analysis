@@ -57,6 +57,7 @@ class ScienceDirectPaper(PaperMetaData):
 
     def __init__(self, url, selenium_driver):
         """Initializes the ScienceDirectPaper object"""
+        self.database = "sciencedirect"
         self.url = url
         self.title = self.get_title(selenium_driver)
         self.authors = self.get_authors(selenium_driver)
@@ -151,6 +152,7 @@ class IEEEPaper(PaperMetaData):
 
     def __init__(self, url, selenium_driver):
         """Initializes the IEEEPaper object"""
+        self.database = "ieeexplore"
         self.url = url
         self.title = self.get_title(selenium_driver)
         self.authors = self.get_authors(selenium_driver)
