@@ -62,11 +62,11 @@ class ScienceDirectPaper(PaperMetaData):
         self.title = self.get_title(selenium_driver)
         self.authors = self.get_authors(selenium_driver)
         self.journal = self.get_journal_name(selenium_driver)
-        self.journal_impact_factor = self.get_journal_impact_factor(selenium_driver)
         self.citations = self.get_citations_amount(selenium_driver)
         self.publish_date = self.get_publishing_date(selenium_driver)
         self.keywords = self.get_paper_keyword_list(selenium_driver)
         self.doi = self.get_paper_doi(selenium_driver)
+        self.journal_impact_factor = self.get_journal_impact_factor(selenium_driver)
 
 
     def get_title(self, selenium_driver):
@@ -99,33 +99,32 @@ class ScienceDirectPaper(PaperMetaData):
         return journal_name
 
 
-    def get_journal_impact_factor(self, selenium_driver):
-        """Returns the Impact factor of the journal were the paper has been published"""
-        journal_link = selenium_driver.find_element_by_class_name("publication-title-link")
-        journal_link.click()
-        impact_factor = selenium_driver.find_element_by_xpath(
-            '//div[@class="move-bottom u-margin-xs-bottom"]/div[2]/button/span/span[1]').text
-        selenium_driver.back()
-        return impact_factor
-
-
     def get_citations_amount(self, selenium_driver):
         """Returns the amount of citations of the given paper"""
-        class_count = WebDriverWait(selenium_driver, 10).until(
-            EC.visibility_of_element_located(
-                (By.XPATH, """//*[@id="mathjax-container"]/div[2]/div[2]
-                /aside/section[3]/div/div/div/div/div[2]/div[1]/div/ul/li/span[2]"""))
-        )
-        return class_count.text
+        try:
+            citations_count = WebDriverWait(selenium_driver, 10).until(
+                EC.visibility_of_element_located(
+                    (By.XPATH, """//*[@id="mathjax-container"]/div[2]/div[2]
+                    /aside/section[3]/div/div/div/div/div[2]/div[1]/div/ul/li/span[2]"""))
+                ).text
+        except TimeoutException as exception:
+            citations_count = None
+            print("Could not find the citations",
+                  exception)
+        return citations_count
 
 
     def get_publishing_date(self, selenium_driver):
         """Returns the Date of publishing"""
-        publishing_info_div = '//*[@id="mathjax-container"]/div[2]/article/div[1]/div[2]/div'
-        publishing_info_text = selenium_driver.find_element_by_xpath(publishing_info_div).text
+        publishing_info_text = selenium_driver.find_element(
+            By.XPATH,
+            "//div[@class='text-xs']").text
         publish_date = publishing_info_text.split(',')[1].strip()
         #Regex also possible
-        publish_year = publish_date.split(' ')[1]
+        if len(publish_date) == 4:
+            publish_year = publish_date
+        else:
+            publish_year = publish_date.split(' ')[1]
         return publish_year
 
 
@@ -146,6 +145,25 @@ class ScienceDirectPaper(PaperMetaData):
         return doi_link
 
 
+    def get_journal_impact_factor(self, selenium_driver):
+        """Returns the Impact factor of the journal were the paper has been published"""
+        try:
+            journal_link = selenium_driver.find_element(
+                By.XPATH,
+                "//a[@class='publication-title-link']")
+            journal_link.click()
+            impact_factor = selenium_driver.find_element_by_xpath(
+                '//div[@class="move-bottom u-margin-xs-bottom"]/div[2]/button/span/span[1]').text
+        except NoSuchElementException as exception:
+            impact_factor = None
+            print("Could not find the Impact factor for",
+                exception)
+
+
+        selenium_driver.back()
+        return impact_factor
+
+
 class IEEEPaper(PaperMetaData):
     """Extract Meta Information from IEEE-Explore database papers"""
 
@@ -156,11 +174,11 @@ class IEEEPaper(PaperMetaData):
         self.title = self.get_title(selenium_driver)
         self.authors = self.get_authors(selenium_driver)
         self.journal = self.get_journal_name(selenium_driver)
-        self.journal_impact_factor = self.get_journal_impact_factor(selenium_driver)
         self.citations = self.get_citations_amount(selenium_driver)
         self.publish_date = self.get_publishing_date(selenium_driver)
         self.keywords = self.get_paper_keyword_list(selenium_driver)
         self.doi = self.get_paper_doi(selenium_driver)
+        self.journal_impact_factor = self.get_journal_impact_factor(selenium_driver)
 
 
     def get_title(self, selenium_driver):
@@ -186,50 +204,33 @@ class IEEEPaper(PaperMetaData):
     @staticmethod
     def get_journal_link(selenium_driver):
         """Returns the link, pointing to the Journalname"""
-        published_in_div = selenium_driver.find_element(
-            By.XPATH,
-            "//div[@class='u-pb-1 stats-document-abstract-publishedIn']"
-        )
-        journal_link = published_in_div.find_element(
-            By.TAG_NAME,
-            "a")
+        # pylint: disable=pointless-statement
+        try:
+            published_in_div = selenium_driver.find_element(
+                By.XPATH,
+                "//div[@class='u-pb-1 stats-document-abstract-publishedIn']"
+                )
+            published_in_div.location_once_scrolled_into_view
+            journal_link = published_in_div.find_element(
+                By.TAG_NAME,
+                "a")
+        except NoSuchElementException as exception:
+            journal_link = None
+            print("Can not find the journal link. Maybe your source isn't a scientific paper? \n",
+                  exception)
         return journal_link
 
 
     def get_journal_name(self, selenium_driver):
-        """Returns the name of the journal were the paper has been published"""
-        journal_name = self.get_journal_link(selenium_driver).text
-        return journal_name
-
-
-    def get_journal_impact_factor(self, selenium_driver):
-        """Returns the Impact factor of the journal were the paper has been published"""
-        # Try except for when the jiournal is a conference paper
-        # pylint: disable=pointless-statement
-        # Pylint think *.location_once_scrolled_into_view is pointless
-
-        impact_factor = None
+        """Returns the name of the journal were the paper has been
+        published. If it isn't a proper journal, it will return
+        'NaJ' for 'Not a Journal'"""
         journal_link = self.get_journal_link(selenium_driver)
-        journal_link.location_once_scrolled_into_view
-        journal_link.click()
-
-        try:
-            impact_factor_link = WebDriverWait(selenium_driver, 3).until(
-                EC.presence_of_element_located((
-                    By.XPATH,
-                    "//a[@class='stats-jhp-impact-factor']"))
-            )
-            impact_factor_link.location_once_scrolled_into_view
-            impact_factor = impact_factor_link.text.split()[0]
-
-        except TimeoutException as exception:
-            # Papers without an impact factor are getting cought
-            print(
-                "Probably a conferencepaper, could not find the impact factor on site:",
-                selenium_driver.current_url, exception)
-
-        selenium_driver.back()
-        return impact_factor
+        if journal_link is not None:
+            journal_name = journal_link.text
+        else:
+            journal_name = "NaJ"
+        return journal_name
 
 
     def get_citations_amount(self, selenium_driver):
@@ -243,6 +244,7 @@ class IEEEPaper(PaperMetaData):
 
     def get_publishing_date(self, selenium_driver):
         """Returns the year of publication of teh paper"""
+        publishing_year = None
         try:
             publishing_date_text = selenium_driver.find_element(
                 By.XPATH,
@@ -255,10 +257,13 @@ class IEEEPaper(PaperMetaData):
                     "//div[@class='u-pb-1 doc-abstract-confdate']"
                 ).text
             except NoSuchElementException as exception:
-                print("Could not find the paper publishing date, maybe the site is broken \n",
+                publishing_date_text = None
+                print("Could not find the paper publishing date for \n",
+                      selenium_driver.current_url,
+                      "Maybe the site is broken \n",
                       exception)
-
-        publishing_year = publishing_date_text.split()[-1:][0]
+        if publishing_date_text is not None:
+            publishing_year = publishing_date_text.split()[-1:][0]
         return publishing_year
 
 
@@ -300,3 +305,35 @@ class IEEEPaper(PaperMetaData):
             print("Could not find the doi, probably an IEEE conference paper \n",
                   exception)
         return doi
+
+
+    def get_journal_impact_factor(self, selenium_driver):
+        """Returns the Impact factor of the journal were the paper has been published"""
+        # Try except for when the jiournal is a conference paper
+        # pylint: disable=pointless-statement
+        # Pylint think *.location_once_scrolled_into_view is pointless
+
+        impact_factor = None
+        journal_link = self.get_journal_link(selenium_driver)
+        if journal_link is None:
+            return impact_factor
+        journal_link.location_once_scrolled_into_view
+        journal_link.click()
+
+        try:
+            impact_factor_link = WebDriverWait(selenium_driver, 3).until(
+                EC.presence_of_element_located((
+                    By.XPATH,
+                    "//a[@class='stats-jhp-impact-factor']"))
+            )
+            impact_factor_link.location_once_scrolled_into_view
+            impact_factor = impact_factor_link.text.split()[0]
+
+        except TimeoutException as exception:
+            # Papers without an impact factor are getting cought
+            print(
+                "Probably a conferencepaper, could not find the impact factor on site:",
+                exception)
+
+        selenium_driver.back()
+        return impact_factor

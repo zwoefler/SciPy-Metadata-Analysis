@@ -26,6 +26,8 @@ def get_scientific_database_name(link):
         if data_base in link:
             db_name = data_base
             break
+        else:
+            db_name = None
     return db_name
 
 
@@ -75,10 +77,14 @@ def main():
     driver = webdriver.Firefox()
 
     for paper_url in url_list:
-        driver.get(paper_url)
         data_base = get_scientific_database_name(paper_url)
-        scipaper_obj = switch_function_selecting_db_class(data_base, paper_url, driver)
-        JSON_EXPORT_LIST.append(scipaper_obj.__dict__)
+        if data_base is not None:
+            print("Currently working on: \n", paper_url)
+            driver.get(paper_url)
+            scipaper_obj = switch_function_selecting_db_class(data_base, paper_url, driver)
+            JSON_EXPORT_LIST.append(scipaper_obj.__dict__)
+        else:
+            continue
 
     write_paper_parameters_to_json(JSON_EXPORT_LIST, export_json_file_name)
     print("Successfully exported the paper information to", export_json_file_name)
