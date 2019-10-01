@@ -96,7 +96,6 @@ class ScienceDirectPaper(PaperMetaData):
         """Returns the name of the journal were the paper has been published"""
         journal_name = selenium_driver.find_element(
             By.XPATH, '//*[@id="mathjax-container"]/div[2]/article/div[1]/div[2]/h2/a').text
-        print(journal_name)
         return journal_name
 
 
@@ -226,7 +225,7 @@ class IEEEPaper(PaperMetaData):
         except TimeoutException as exception:
             # Papers without an impact factor are getting cought
             print(
-                "Could not find the impact factor on site:",
+                "Probably a conferencepaper, could not find the impact factor on site:",
                 selenium_driver.current_url, exception)
 
         selenium_driver.back()
@@ -260,7 +259,6 @@ class IEEEPaper(PaperMetaData):
                       exception)
 
         publishing_year = publishing_date_text.split()[-1:][0]
-        print(publishing_year)
         return publishing_year
 
 

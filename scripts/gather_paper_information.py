@@ -22,19 +22,19 @@ def write_paper_parameters_to_json(parameter_dict, export_file_name):
 def get_scientific_database_name(link):
     """Returns the scientific database used, by extracting it from the link"""
     supported_databases = ["sciencedirect", "ieeexplore"]
-    for db in supported_databases:
-        if db in link:
-            db_name = db
+    for data_base in supported_databases:
+        if data_base in link:
+            db_name = data_base
             break
     return db_name
 
 
-def switch_function_selecting_db_class(db, link, driver):
+def switch_function_selecting_db_class(data_base, link, driver):
     """This function works as a switcher, selecting the correct databaseclass
     to extract the corret meta information"""
-    if db == "ieeexplore":
+    if data_base == "ieeexplore":
         paper_info_obj = IEEEPaper(link, driver)
-    if db == "sciencedirect":
+    if data_base == "sciencedirect":
         paper_info_obj = ScienceDirectPaper(link, driver)
 
     return paper_info_obj
@@ -76,9 +76,8 @@ def main():
 
     for paper_url in url_list:
         driver.get(paper_url)
-        db = get_scientific_database_name(paper_url)
-        scipaper_obj = switch_function_selecting_db_class(db, paper_url, driver)
-        print(scipaper_obj.__dict__)
+        data_base = get_scientific_database_name(paper_url)
+        scipaper_obj = switch_function_selecting_db_class(data_base, paper_url, driver)
         JSON_EXPORT_LIST.append(scipaper_obj.__dict__)
 
     write_paper_parameters_to_json(JSON_EXPORT_LIST, export_json_file_name)
