@@ -1,4 +1,3 @@
-*.ipynb
 *.log
 */*init*
 scripts/__pycache__/*
