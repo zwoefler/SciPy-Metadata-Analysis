@@ -3,8 +3,10 @@
 This repository extracts metadata information from scientifc papers throughout scientific databases with selenium
 
 ## Current objective
-Transform the project, so that the buildscript gets a file with a link list, determines the scientific database and extracts all
+Transform the project, so that the buildscript gets a file with a
+link list, determines the scientific database and extracts all
 relevant metadata into a json-file, containing all the meta information.
+Automatically make some analysis regarding the gathered data. Such as correlations for authors and keywords or so.
 
 ## Goal
 The goal is to learn and use [Selenium](https://selenium-python.readthedocs.io/) for webscrapping and deepen the knowledge of Python3.
@@ -52,6 +54,8 @@ Since I already know the Pandas library for Python3, I wanted to gather the data
     - [ ] Journalname
     - [ ] Journal Impact Factor
     - [ ] Amount of Citations
+
+
 
 # Lessons Learned
 1. Improved my skills in Webscrapping with `Selenium`.
