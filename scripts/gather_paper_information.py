@@ -2,13 +2,9 @@
 import argparse
 import json
 from selenium import webdriver
-from database_classes import IEEEPaper
+from database_classes import IEEEPaper, ScienceDirectPaper
 
-
-PARAMETERS_TO_EXTRACT = [
-    "title", "author", "journal", "impact factor", "citations", "publishing date"]
-PAPER_INFORMATION_DICT = {}
-SUPPORTED_DATABASES = ["sciencedirect", "ieeexplore"]
+JSON_EXPORT_LIST = []
 
 
 def read_papers_urls(url_file):
@@ -23,10 +19,32 @@ def write_paper_parameters_to_json(parameter_dict, export_file_name):
         json.dump(parameter_dict, file_object)
 
 
+def get_scientific_database_name(link):
+    """Returns the scientific database used, by extracting it from the link"""
+    supported_databases = ["sciencedirect", "ieeexplore"]
+    for data_base in supported_databases:
+        if data_base in link:
+            db_name = data_base
+            break
+        else:
+            db_name = None
+    return db_name
+
+
+def switch_function_selecting_db_class(data_base, link, driver):
+    """This function works as a switcher, selecting the correct databaseclass
+    to extract the corret meta information"""
+    if data_base == "ieeexplore":
+        paper_info_obj = IEEEPaper(link, driver)
+    if data_base == "sciencedirect":
+        paper_info_obj = ScienceDirectPaper(link, driver)
+
+    return paper_info_obj
+
+
 def main():
     """This is the main function thats gathers the paper
     information based on the extracted booksmarks"""
-
 
     parser = argparse.ArgumentParser(
         description='''Returns a JSON file with all the relevant meta data of an URL
@@ -54,17 +72,22 @@ def main():
     url_json_file = args.url_json
     export_json_file_name = args.export_destination
 
+
     url_list = read_papers_urls(url_json_file)
     driver = webdriver.Firefox()
-    scienecedirect_list = []
-    for paper_url in url_list:
-        driver.get(paper_url)
-        scipaper_obj = IEEEPaper(paper_url, driver)
-        print(scipaper_obj.__dict__)
-        scienecedirect_list.append(scipaper_obj.__dict__)
 
-    PAPER_INFORMATION_DICT["IEEEPaper"] = scienecedirect_list
-    write_paper_parameters_to_json(PAPER_INFORMATION_DICT, export_json_file_name)
+    for paper_url in url_list:
+        data_base = get_scientific_database_name(paper_url)
+        if data_base is not None:
+            print("Currently working on: \n", paper_url)
+            driver.implicitly_wait(1)
+            driver.get(paper_url)
+            scipaper_obj = switch_function_selecting_db_class(data_base, paper_url, driver)
+            JSON_EXPORT_LIST.append(scipaper_obj.__dict__)
+        else:
+            continue
+
+    write_paper_parameters_to_json(JSON_EXPORT_LIST, export_json_file_name)
     print("Successfully exported the paper information to", export_json_file_name)
     driver.quit()
 

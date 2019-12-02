@@ -1,0 +1,3897 @@
+[
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/6027518",
+        "title": "A visualization and modeling tool for security metrics and measurements management",
+        "authors": [
+            "Reijo M. Savola ;",
+            "Petri Heinonen"
+        ],
+        "journal": "2011 Information Security for South Africa",
+        "citations": "10",
+        "publish_date": "2011",
+        "keywords": [
+            "Measurement",
+            "Visualization",
+            "Authentication",
+            "Data visualization",
+            "Probes",
+            "Color",
+            "security metrics",
+            "visualization",
+            "security assurance",
+            "risk management"
+        ],
+        "doi": "10.1109/ISSA.2011.6027518",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "sciencedirect",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0167404808000461",
+        "title": "Information security requirements \u2013 Interpreting the legal aspects",
+        "authors": [
+            {
+                "surname": "Gerber",
+                "first_name": "Mariana"
+            },
+            {
+                "surname": "von Solms",
+                "first_name": "Rossouw"
+            }
+        ],
+        "journal": "Computers & Security",
+        "citations": "21",
+        "publish_date": "5\u20136",
+        "keywords": [
+            "Information security",
+            "Information security management",
+            "ISO/IEC 17799",
+            "ISO/IEC 27002",
+            "Information security requirements",
+            "Legal requirements",
+            "Compliance"
+        ],
+        "doi": "https://doi.org/10.1016/j.cose.2008.07.009",
+        "journal_impact_factor": "3.062"
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/7166125",
+        "title": "Cyber security operations centre: Security monitoring for protecting business and supporting cyber defense strategy",
+        "authors": [
+            "Cyril Onwubiko"
+        ],
+        "journal": "2015 International Conference on Cyber Situational Awareness, Data Analytics and Assessment (CyberSA)",
+        "citations": "6",
+        "publish_date": "2015",
+        "keywords": [
+            "Monitoring",
+            "Business",
+            "Computer crime",
+            "System-on-chip",
+            "Timing",
+            "Cyber Security Operations Centre",
+            "CSOC",
+            "SOC",
+            "Cyber Incident Response",
+            "Cyber Situational Awareness",
+            "CyberSA",
+            "Log Source",
+            "Analysis",
+            "Correlation",
+            "Risk Management",
+            "CSOC Strategy",
+            "CSOC Benefits & Challenges"
+        ],
+        "doi": "10.1109/CyberSA.2015.7166125",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "sciencedirect",
+        "url": "https://www.sciencedirect.com/science/article/pii/S1877050916323900",
+        "title": "Security Management Standards: A Mapping",
+        "authors": [
+            {
+                "surname": "Haufe",
+                "first_name": "Knut"
+            },
+            {
+                "surname": "Colomo-Palacios",
+                "first_name": "Ricardo"
+            },
+            {
+                "surname": "Dzombeta",
+                "first_name": "Srdan"
+            },
+            {
+                "surname": "Brandis",
+                "first_name": "Knud"
+            },
+            {
+                "surname": "Stantchev",
+                "first_name": "Vladimir"
+            }
+        ],
+        "journal": "Procedia Computer Science",
+        "citations": null,
+        "publish_date": "2016",
+        "keywords": [
+            "Information Security",
+            "ISMS",
+            "Mapping",
+            "Processes",
+            "IT Governance"
+        ],
+        "doi": "https://doi.org/10.1016/j.procs.2016.09.221",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "sciencedirect",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S095058491830096X",
+        "title": "Mapping the field of software life cycle security metrics",
+        "authors": [
+            {
+                "surname": "Morrison",
+                "first_name": "Patrick"
+            },
+            {
+                "surname": "Moye",
+                "first_name": "David"
+            },
+            {
+                "surname": "Pandita",
+                "first_name": "Rahul"
+            },
+            {
+                "surname": "Williams",
+                "first_name": "Laurie"
+            }
+        ],
+        "journal": "Information and Software Technology",
+        "citations": "3",
+        "publish_date": "2018",
+        "keywords": [
+            "Metrics",
+            "Measurement",
+            "Security"
+        ],
+        "doi": "https://doi.org/10.1016/j.infsof.2018.05.011",
+        "journal_impact_factor": "2.921"
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/1377211",
+        "title": "The trustworthy computing security development lifecycle",
+        "authors": [
+            "S. Lipner"
+        ],
+        "journal": "20th Annual Computer Security Applications Conference",
+        "citations": "47",
+        "publish_date": "2004",
+        "keywords": [
+            "Computer security",
+            "Application software"
+        ],
+        "doi": "10.1109/CSAC.2004.41",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/8470942/keywords#keywords",
+        "title": "Survey of Attack Projection, Prediction, and Forecasting in Cyber Security",
+        "authors": [
+            "Martin Hus\u00e1k ;",
+            "Jana Kom\u00e1rkov\u00e1 ;",
+            "Elias Bou-Harb ;",
+            "Pavel \u010celeda"
+        ],
+        "journal": "NaJ",
+        "citations": "1",
+        "publish_date": null,
+        "keywords": [],
+        "doi": "10.1109/COMST.2018.2871866",
+        "journal_impact_factor": "22.973"
+    },
+    {
+        "database": "sciencedirect",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S0950584918300697",
+        "title": "SINIS: A GQM+Strategies-based approach for identifying goals, strategies and indicators for IT services",
+        "authors": [
+            {
+                "surname": "Trinkenreich",
+                "first_name": "Bianca"
+            },
+            {
+                "surname": "Santos",
+                "first_name": "Gleison"
+            },
+            {
+                "surname": "Barcellos",
+                "first_name": "Monalessa Perini"
+            }
+        ],
+        "journal": "Information and Software Technology",
+        "citations": "3",
+        "publish_date": "2018",
+        "keywords": [],
+        "doi": "https://doi.org/10.1016/j.infsof.2018.04.006",
+        "journal_impact_factor": "2.921"
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/8270562",
+        "title": "Modelling IT security risk management in academic environment",
+        "authors": [
+            "Vladislavs Minkevics ;",
+            "Jans Slihte"
+        ],
+        "journal": "2017 5th IEEE Workshop on Advances in Information, Electronic and Electrical Engineering (AIEEE)",
+        "citations": "251",
+        "publish_date": "2017",
+        "keywords": [
+            "Security",
+            "Risk management",
+            "Malware",
+            "Electronic mail",
+            "Organizations",
+            "Best practices",
+            "IP networks",
+            "Academic freedom",
+            "IT security",
+            "risk management model",
+            "IDS",
+            "SIEM"
+        ],
+        "doi": "10.1109/AIEEE.2017.8270562",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "sciencedirect",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0167404817302523",
+        "title": "Correlating human traits and cyber security behavior intentions",
+        "authors": [
+            {
+                "surname": "Gratian",
+                "first_name": "Margaret"
+            },
+            {
+                "surname": "Bandi",
+                "first_name": "Sruthi"
+            },
+            {
+                "surname": "Cukier",
+                "first_name": "Michel"
+            },
+            {
+                "surname": "Dykstra",
+                "first_name": "Josiah"
+            },
+            {
+                "surname": "Ginther",
+                "first_name": "Amy"
+            }
+        ],
+        "journal": "Computers & Security",
+        "citations": "8",
+        "publish_date": "2018",
+        "keywords": [
+            "Human factors",
+            "Individual differences",
+            "Cyber security behaviors",
+            "Cyber security intentions",
+            "Surveys"
+        ],
+        "doi": "https://doi.org/10.1016/j.cose.2017.11.015",
+        "journal_impact_factor": "3.062"
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/8443131",
+        "title": "Vulnus: Visual Vulnerability Analysis for Network Security",
+        "authors": [
+            "Marco Angelini ;",
+            "Graziano Blasilli ;",
+            "Tiziana Catarci ;",
+            "Simone Lenti ;",
+            "Giuseppe Santucci"
+        ],
+        "journal": "IEEE Transactions on Visualization and Computer Graphics",
+        "citations": "486",
+        "publish_date": "2018",
+        "keywords": [
+            "Security",
+            "Bars",
+            "Measurement",
+            "Visual analytics",
+            "Organizations",
+            "Visual Analytics",
+            "Network security",
+            "Vulnerability analysis",
+            "CVE",
+            "CVSS",
+            "Attack Graph",
+            "Vulnerability triage and management"
+        ],
+        "doi": "10.1109/TVCG.2018.2865028",
+        "journal_impact_factor": "3.780"
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/7502348",
+        "title": "Cyber warfare: terms, issues, laws and controversies",
+        "authors": [
+            "Kamile Nur Sevis ;",
+            "Ensar Seker"
+        ],
+        "journal": "2016 International Conference On Cyber Security And Protection Of Digital Services (Cyber Security)",
+        "citations": "3",
+        "publish_date": "2016",
+        "keywords": [
+            "Cyberspace",
+            "Internet",
+            "Computer security",
+            "Computers",
+            "National security",
+            "Government",
+            "component",
+            "Law",
+            "National Security",
+            "Self-Defense Cyber Attack",
+            "Cyber Warfare"
+        ],
+        "doi": "10.1109/CyberSecPODS.2016.7502348",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/7542327",
+        "title": "Recommendations for effective cyber security execution",
+        "authors": [
+            "Shipra Ravi Kumar ;",
+            "Suman Avdhesh Yadav ;",
+            "Smita Sharma ;",
+            "Akansha Singh"
+        ],
+        "journal": "2016 International Conference on Innovation and Challenges in Cyber Security (ICICCS-INBUSH)",
+        "citations": "5",
+        "publish_date": "2016",
+        "keywords": [
+            "Computer security",
+            "Government",
+            "Internet",
+            "Cyberspace",
+            "Law",
+            "NIC (National Informatics Centre)",
+            "Cyber Crime",
+            "Cyber Security",
+            "NISAP (National Information of security Assurance Program)",
+            "ISTF (Inter Departmental Information Security Task Force)",
+            "IC3 (Internet Crime Complaint Centre)"
+        ],
+        "doi": "10.1109/ICICCS.2016.7542327",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/6127465",
+        "title": "Automatic security analysis using security metrics",
+        "authors": [
+            "Kun Sun ;",
+            "Sushil Jajodia ;",
+            "Jason Li ;",
+            "Yi Cheng ;",
+            "Wei Tang ;",
+            "Anoop Singhal"
+        ],
+        "journal": "2011 - MILCOM 2011 Military Communications Conference",
+        "citations": "6",
+        "publish_date": "2011",
+        "keywords": [
+            "Security",
+            "Measurement",
+            "Computers",
+            "Visualization",
+            "Databases",
+            "Availability",
+            "Vectors"
+        ],
+        "doi": "10.1109/MILCOM.2011.6127465",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/4140998/keywords#keywords",
+        "title": "A Metrics Framework to Drive Application Security Improvement",
+        "authors": [
+            "Elizabeth A. Nichols ;",
+            "Gunnar Peterson"
+        ],
+        "journal": "IEEE Security & Privacy",
+        "citations": "13",
+        "publish_date": "2007",
+        "keywords": [],
+        "doi": "10.1109/MSP.2007.26",
+        "journal_impact_factor": "1.596"
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/5432146/citations#citations",
+        "title": "Why Measuring Security Is Hard",
+        "authors": [
+            "Shari Pfleeger ;",
+            "Robert Cunningham"
+        ],
+        "journal": "IEEE Security & Privacy",
+        "citations": "30",
+        "publish_date": "2010",
+        "keywords": [
+            "Security",
+            "Investments",
+            "security and privacy",
+            "measurement"
+        ],
+        "doi": "10.1109/MSP.2010.60",
+        "journal_impact_factor": "1.596"
+    },
+    {
+        "database": "sciencedirect",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S1570870518305936",
+        "title": "Apparatus: A framework for security analysis in internet of things systems",
+        "authors": [
+            {
+                "surname": "Mavropoulos",
+                "first_name": "Orestis"
+            },
+            {
+                "surname": "Mouratidis",
+                "first_name": "Haralambos"
+            },
+            {
+                "surname": "Fish",
+                "first_name": "Andrew"
+            },
+            {
+                "surname": "Panaousis",
+                "first_name": "Emmanouil"
+            }
+        ],
+        "journal": "Ad Hoc Networks",
+        "citations": null,
+        "publish_date": "2019",
+        "keywords": [
+            "IoT Security",
+            "Security requirements",
+            "Smart cities security",
+            "Apparatus framework"
+        ],
+        "doi": "https://doi.org/10.1016/j.adhoc.2018.08.013",
+        "journal_impact_factor": "3.49"
+    },
+    {
+        "database": "sciencedirect",
+        "url": "https://www.sciencedirect.com/science/article/pii/B9780124202313000130",
+        "title": "Information Security Metrics",
+        "authors": [
+            {
+                "surname": "Freund",
+                "first_name": "Jack"
+            },
+            {
+                "surname": "Jones",
+                "first_name": "Jack"
+            }
+        ],
+        "journal": "Measuring and Managing Information Risk",
+        "citations": null,
+        "publish_date": "293-333",
+        "keywords": [
+            "Execution",
+            "KPI",
+            "KRI",
+            "Metrics",
+            "Variability",
+            "Visibility"
+        ],
+        "doi": "https://doi.org/10.1016/B978-0-12-420231-3.00013-0",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/1232413",
+        "title": "Identification of IT security-relevant system characteristics",
+        "authors": [
+            "A. Hunstad ;",
+            "J. Hallberg ;",
+            "A. Stjerneby"
+        ],
+        "journal": "IEEE Systems, Man and Cybernetics SocietyInformation Assurance Workshop, 2003.",
+        "citations": "1",
+        "publish_date": "2003",
+        "keywords": [
+            "Information security",
+            "Distributed information systems",
+            "Protection",
+            "Command and control systems",
+            "Communication system security",
+            "Reconnaissance",
+            "Design methodology",
+            "Performance analysis",
+            "Control systems",
+            "Intelligent networks"
+        ],
+        "doi": "10.1109/SMCSIA.2003.1232413",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/7437356",
+        "title": "Improving Interdisciplinary Communication With Standardized Cyber Security Terminology: A Literature Review",
+        "authors": [
+            "Robert Ramirez ;",
+            "Nazli Choucri"
+        ],
+        "journal": "NaJ",
+        "citations": "6",
+        "publish_date": "2016",
+        "keywords": [
+            "Computer crime",
+            "Computer security",
+            "Cybersecurity",
+            "Information technology",
+            "Dictionaries",
+            "Standards",
+            "Internet",
+            "Government policies",
+            "Market research",
+            "Cyber security",
+            "cyber-crime",
+            "cybersecurity",
+            "internet",
+            "hacker",
+            "national security",
+            "critical infrastructure",
+            "cyberspace",
+            "information technology",
+            "ICT",
+            "dictionaries",
+            "Standardization",
+            "Standards"
+        ],
+        "doi": "10.1109/ACCESS.2016.2544381",
+        "journal_impact_factor": "4.098"
+    },
+    {
+        "database": "sciencedirect",
+        "url": "https://www.sciencedirect.com/science/article/pii/S1353485818300424",
+        "title": "Making cyber-security a strategic business priority",
+        "authors": [
+            {
+                "surname": "James",
+                "first_name": "Lee"
+            }
+        ],
+        "journal": "Network Security",
+        "citations": "1",
+        "publish_date": "5",
+        "keywords": [],
+        "doi": "https://doi.org/10.1016/S1353-4858(18)30042-4",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/7916190",
+        "title": "A literature review on phishing crime, prevention review and investigation of gaps",
+        "authors": [
+            "Anjum N. Shaikh ;",
+            "Antesar M. Shabut ;",
+            "M.A. Hossain"
+        ],
+        "journal": "2016 10th International Conference on Software, Knowledge, Information Management & Applications (SKIMA)",
+        "citations": "4",
+        "publish_date": "2016",
+        "keywords": [
+            "Electronic mail",
+            "Tools",
+            "Security",
+            "Malware",
+            "Information management",
+            "Bibliographies",
+            "phishing",
+            "cyber crime",
+            "internet security",
+            "social egineering"
+        ],
+        "doi": "10.1109/SKIMA.2016.7916190",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/5137311",
+        "title": "A new quantitative approach for information security risk assessment",
+        "authors": [
+            "Abbas Asosheh ;",
+            "Bijan Dehmoubed ;",
+            "Amir Khani"
+        ],
+        "journal": "2009 IEEE International Conference on Intelligence and Security Informatics",
+        "citations": "1",
+        "publish_date": "2009",
+        "keywords": [
+            "Information security",
+            "Risk management",
+            "Environmental management",
+            "Information management",
+            "Technology management",
+            "Engineering management",
+            "ISO standards",
+            "IEC standards",
+            "TV",
+            "Industrial engineering"
+        ],
+        "doi": "10.1109/ISI.2009.5137311",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/6717789/keywords#keywords",
+        "title": "A Study on Improvement Measures of Unmanned Security System against Security Threats",
+        "authors": [
+            "Byung Seok Kong ;",
+            "Min Su Kim ;",
+            "Kuinam J. Kim"
+        ],
+        "journal": "2013 International Conference on IT Convergence and Security (ICITCS)",
+        "citations": "1",
+        "publish_date": "2013",
+        "keywords": [],
+        "doi": "10.1109/ICITCS.2013.6717789",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/6007132",
+        "title": "A Survey of Visualization Systems for Network Security",
+        "authors": [
+            "Hadi Shiravi ;",
+            "Ali Shiravi ;",
+            "Ali A. Ghorbani"
+        ],
+        "journal": "NaJ",
+        "citations": "107",
+        "publish_date": "2011",
+        "keywords": [
+            "Data visualization",
+            "Security",
+            "Servers",
+            "Visualization",
+            "Monitoring",
+            "Feature extraction",
+            "IP networks",
+            "Information visualization",
+            "network security visualization",
+            "visualization techniques."
+        ],
+        "doi": "10.1109/TVCG.2011.144",
+        "journal_impact_factor": "3.780"
+    },
+    {
+        "database": "sciencedirect",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0164121213001726",
+        "title": "A decision support framework for metrics selection in goal-based measurement programs: GQM-DSFMS",
+        "authors": [
+            {
+                "surname": "Gencel",
+                "first_name": "Cigdem"
+            },
+            {
+                "surname": "Petersen",
+                "first_name": "Kai"
+            },
+            {
+                "surname": "Mughal",
+                "first_name": "Aftab Ahmad"
+            },
+            {
+                "surname": "Iqbal",
+                "first_name": "Muhammad Imran"
+            }
+        ],
+        "journal": "Journal of Systems and Software",
+        "citations": "14",
+        "publish_date": "12",
+        "keywords": [
+            "Software measurement program",
+            "Goal based measurement",
+            "Goal Question Metric",
+            "GQM",
+            "Decision support",
+            "Optimization",
+            "Prioritization"
+        ],
+        "doi": "https://doi.org/10.1016/j.jss.2013.07.022",
+        "journal_impact_factor": "2.559"
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/8625291",
+        "title": "Evaluation of Security Information and Event Management Systems for Custom Security Visualization Generation",
+        "authors": [
+            "Ferda \u00d6zdemir S\u00f6nmez ;",
+            "Banu G\u00fcnel"
+        ],
+        "journal": "2018 International Congress on Big Data, Deep Learning and Fighting Cyber Terrorism (IBIGDELFT)",
+        "citations": "128",
+        "publish_date": "2018",
+        "keywords": [
+            "Data visualization",
+            "Measurement",
+            "Tools",
+            "Security",
+            "Data structures",
+            "Task analysis",
+            "Big Data",
+            "Security Information and Event Management",
+            "SIEM",
+            "Visualization",
+            "Splunk",
+            "AlienVault",
+            "Event Log Analyzer",
+            "Gartner",
+            "ArcSight",
+            "Rapid7"
+        ],
+        "doi": "10.1109/IBIGDELFT.2018.8625291",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "sciencedirect",
+        "url": "https://www.sciencedirect.com/science/article/pii/S074756321730359X",
+        "title": "Risk perceptions of cyber-security and precautionary behaviour",
+        "authors": [
+            {
+                "surname": "van Schaik",
+                "first_name": "Paul"
+            },
+            {
+                "surname": "Jeske",
+                "first_name": "Debora"
+            },
+            {
+                "surname": "Onibokun",
+                "first_name": "Joseph"
+            },
+            {
+                "surname": "Coventry",
+                "first_name": "Lynne"
+            },
+            {
+                "surname": "Jansen",
+                "first_name": "Jurjen"
+            },
+            {
+                "surname": "Kusev",
+                "first_name": "Petko"
+            }
+        ],
+        "journal": "Computers in Human Behavior",
+        "citations": "13",
+        "publish_date": "2017",
+        "keywords": [
+            "Risk perception",
+            "Precautionary behaviour",
+            "Information security",
+            "Cyber-security",
+            "Non-aggregate data analysis"
+        ],
+        "doi": "https://doi.org/10.1016/j.chb.2017.05.038",
+        "journal_impact_factor": "4.306"
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/7166125/keywords#keywords",
+        "title": "Cyber security operations centre: Security monitoring for protecting business and supporting cyber defense strategy",
+        "authors": [
+            "Cyril Onwubiko"
+        ],
+        "journal": "2015 International Conference on Cyber Situational Awareness, Data Analytics and Assessment (CyberSA)",
+        "citations": "6",
+        "publish_date": "2015",
+        "keywords": [],
+        "doi": "10.1109/CyberSA.2015.7166125",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/8661030",
+        "title": "Security Metrics: Principles and Security Assessment Methods",
+        "authors": [
+            "Abouzar Arabsorkhi ;",
+            "Fariba Ghaffari"
+        ],
+        "journal": "2018 9th International Symposium on Telecommunications (IST)",
+        "citations": "69",
+        "publish_date": "2018",
+        "keywords": [
+            "Measurement",
+            "Organizations",
+            "Standards organizations",
+            "Taxonomy",
+            "Information security",
+            "Benchmark testing",
+            "Security Assessment",
+            "Taxonomy of Security Metric",
+            "Security Metric",
+            "Meta-Metric"
+        ],
+        "doi": "10.1109/ISTEL.2018.8661030",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/6578791/metrics#metrics",
+        "title": "Effects of Fear appeals and point of reference on the persuasiveness of IT security communications",
+        "authors": [
+            "Honglu Du ;",
+            "Heng Xu ;",
+            "Mary Beth Rosson ;",
+            "John M. Carroll"
+        ],
+        "journal": "2013 IEEE International Conference on Intelligence and Security Informatics",
+        "citations": "3",
+        "publish_date": "2013",
+        "keywords": [
+            "Spyware",
+            "Educational institutions",
+            "Software",
+            "Psychology",
+            "Atmospheric measurements",
+            "fear appeal",
+            "point of reference",
+            "persuasive computing",
+            "IT security communication"
+        ],
+        "doi": "10.1109/ISI.2013.6578791",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "sciencedirect",
+        "url": "https://www.sciencedirect.com/science/article/pii/S1084804516302983",
+        "title": "Cloud security issues and challenges: A survey",
+        "authors": [
+            {
+                "surname": "Singh",
+                "first_name": "Ashish"
+            },
+            {
+                "surname": "Chatterjee",
+                "first_name": "Kakali"
+            }
+        ],
+        "journal": "Journal of Network and Computer Applications",
+        "citations": "73",
+        "publish_date": "February",
+        "keywords": [
+            "Cloud computing",
+            "Cloud framework",
+            "Cloud security",
+            "Cloud security challenges",
+            "Cloud security issues"
+        ],
+        "doi": "https://doi.org/10.1016/j.jnca.2016.11.027",
+        "journal_impact_factor": "5.273"
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/8073752",
+        "title": "A theory-based review of information security behavior in the organization and home context",
+        "authors": [
+            "Joseph Omidosu ;",
+            "Jacques Ophoff"
+        ],
+        "journal": "2016 International Conference on Advances in Computing and Communication Engineering (ICACCE)",
+        "citations": "231",
+        "publish_date": "2016",
+        "keywords": [
+            "Information security",
+            "Computer security",
+            "Organizations",
+            "Automation",
+            "Monitoring",
+            "behavioral information security",
+            "behavioral theories",
+            "organizational context",
+            "home context"
+        ],
+        "doi": "10.1109/ICACCE.2016.8073752",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "sciencedirect",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S0920548918301272#ec-research-data",
+        "title": "System security requirements: A framework for early identification, specification and measurement of related software requirements",
+        "authors": [
+            {
+                "surname": "Meridji",
+                "first_name": "Kenza"
+            },
+            {
+                "surname": "Al-Sarayreh",
+                "first_name": "Khalid T."
+            },
+            {
+                "surname": "Abran",
+                "first_name": "Alain"
+            },
+            {
+                "surname": "Trudel",
+                "first_name": "Sylvie"
+            }
+        ],
+        "journal": "Computer Standards & Interfaces",
+        "citations": null,
+        "publish_date": "2019",
+        "keywords": [
+            "Non-functional requirements (NFR)",
+            "Security requirements",
+            "International standards",
+            "Security measurement",
+            "Soft-goal interdependency",
+            "Graphs (SIG)",
+            "COSMIC \u2013 ISO 19761",
+            "COSMIC-SOA"
+        ],
+        "doi": "https://doi.org/10.1016/j.csi.2019.04.005",
+        "journal_impact_factor": "2.441"
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/abstract/document/5480883/keywords#keywords",
+        "title": "Information Security Threats Classification Pyramid",
+        "authors": [
+            "Mohammed Alhabeeb ;",
+            "Abdullah Almuhaideb ;",
+            "Phu Dung Le ;",
+            "Bala Srinivasan"
+        ],
+        "journal": "2010 IEEE 24th International Conference on Advanced Information Networking and Applications Workshops",
+        "citations": "12",
+        "publish_date": "2010",
+        "keywords": [],
+        "doi": "10.1109/WAINA.2010.39",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "sciencedirect",
+        "url": "https://www.sciencedirect.com/science/article/pii/S1045926X17301106",
+        "title": "MAD: A visual analytics solution for Multi-step cyber Attacks Detection",
+        "authors": [
+            {
+                "surname": "Angelini",
+                "first_name": "M."
+            },
+            {
+                "surname": "Bonomi",
+                "first_name": "S."
+            },
+            {
+                "surname": "Lenti",
+                "first_name": "S."
+            },
+            {
+                "surname": "Santucci",
+                "first_name": "G."
+            },
+            {
+                "surname": "Taggi",
+                "first_name": "S."
+            }
+        ],
+        "journal": "Journal of Computer Languages",
+        "citations": "3",
+        "publish_date": "2019",
+        "keywords": [
+            "Visual analytics",
+            "Security visualization",
+            "Cyber security",
+            "Critical infrastructure",
+            "Situational awareness",
+            "Multi-step attacks",
+            "Attack graph",
+            "Vulnerabilities"
+        ],
+        "doi": "https://doi.org/10.1016/j.cola.2018.12.007",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/8405026",
+        "title": "On the effectiveness of machine and deep learning for cyber security",
+        "authors": [
+            "Giovanni Apruzzese ;",
+            "Michele Colajanni ;",
+            "Luca Ferretti ;",
+            "Alessandro Guido ;",
+            "Mirco Marchetti"
+        ],
+        "journal": "2018 10th International Conference on Cyber Conflict (CyCon)",
+        "citations": "3",
+        "publish_date": "2018",
+        "keywords": [
+            "Machine learning",
+            "Computer security",
+            "Classification algorithms",
+            "Machine learning algorithms",
+            "Training",
+            "Hidden Markov models",
+            "machine learning",
+            "deep learning",
+            "cyber security",
+            "adversarial learning"
+        ],
+        "doi": "10.23919/CYCON.2018.8405026",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/4511611",
+        "title": "Catalog of Metrics for Assessing Security Risks of Software throughout the Software Development Life Cycle",
+        "authors": [
+            "Khalid Sultan ;",
+            "Abdeslam En-Nouaary ;",
+            "Abdelwahab Hamou-Lhadj"
+        ],
+        "journal": "2008 International Conference on Information Security and Assurance (isa 2008)",
+        "citations": "3",
+        "publish_date": "2008",
+        "keywords": [
+            "Programming",
+            "Information security",
+            "Power system security",
+            "Data security",
+            "Application software",
+            "IEC standards",
+            "ISO standards",
+            "Computer security",
+            "Software systems",
+            "Software design",
+            "Software security",
+            "security metrics",
+            "software development lifecycle",
+            "design for security"
+        ],
+        "doi": "10.1109/ISA.2008.104",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/8639656",
+        "title": "An Approach for Trustworthiness Benchmarking Using Software Metrics",
+        "authors": [
+            "N\u00e1dia Medeiros ;",
+            "Naghmeh Ivaki ;",
+            "Pedro Costa ;",
+            "Marco Vieira"
+        ],
+        "journal": "2018 IEEE 23rd Pacific Rim International Symposium on Dependable Computing (PRDC)",
+        "citations": "95",
+        "publish_date": "2018",
+        "keywords": [
+            "Software metrics",
+            "Security",
+            "Benchmark testing",
+            "Buildings",
+            "Software systems",
+            "Trustworthiness Benchmarking",
+            "Security Vulnerabilities",
+            "Software Metrics"
+        ],
+        "doi": "10.1109/PRDC.2018.00019",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "sciencedirect",
+        "url": "https://www.sciencedirect.com/science/article/pii/B9781856177467000274",
+        "title": "Security Risk Management",
+        "authors": [
+            {
+                "surname": "Peterson",
+                "first_name": "Kevin E."
+            }
+        ],
+        "journal": "The Professional Protection Officer",
+        "citations": null,
+        "publish_date": "315-330",
+        "keywords": [],
+        "doi": "https://doi.org/10.1016/B978-1-85617-746-7.00027-4",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/6717070",
+        "title": "Threat analysis in the software development lifecycle",
+        "authors": [
+            "J. Whitmore ;",
+            "S. T\u00fcrpe ;",
+            "S. Triller ;",
+            "A. Poller ;",
+            "C. Carlson"
+        ],
+        "journal": "IBM Journal of Research and Development",
+        "citations": "2",
+        "publish_date": "2014",
+        "keywords": [
+            "Software development",
+            "Computer security",
+            "Business",
+            "Encoding",
+            "Analytical models",
+            "Information technology",
+            "Government"
+        ],
+        "doi": "10.1147/JRD.2013.2288060",
+        "journal_impact_factor": "0.79"
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/5198449/keywords#keywords",
+        "title": "A unified framework for it security - analysis - [IT security]",
+        "authors": [
+            "Tony Dyhouse"
+        ],
+        "journal": "Engineering & Technology",
+        "citations": "428",
+        "publish_date": "2009",
+        "keywords": [],
+        "doi": "10.1049/et.2009.1112",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/8531544",
+        "title": "A Management Model for Building a Computer Security Incident Response Capability",
+        "authors": [
+            "Roderick D. Mooi ;",
+            "Reinhardt A. Botha"
+        ],
+        "journal": "SAIEE Africa Research Journal",
+        "citations": "119",
+        "publish_date": "2016",
+        "keywords": [
+            "Computational modeling",
+            "Computer security",
+            "Buildings",
+            "Internet",
+            "CSIRT",
+            "CERT",
+            "establishing requirements",
+            "building",
+            "incident response team",
+            "cyber security team",
+            "security operations centre",
+            "information security capability",
+            "management model"
+        ],
+        "doi": "10.23919/SAIEE.2016.8531544",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "sciencedirect",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S0950584917303403",
+        "title": "An extension of the GQM+Strategies approach with formal causal reasoning",
+        "authors": [
+            {
+                "surname": "Mandi\u0107",
+                "first_name": "Vladimir"
+            },
+            {
+                "surname": "Gvozdenovi\u0107",
+                "first_name": "Neboj\u0161a"
+            }
+        ],
+        "journal": "Information and Software Technology",
+        "citations": "4",
+        "publish_date": "2017",
+        "keywords": [
+            "Software metrics and measurement",
+            "Goal-driven approaches",
+            "Causal analysis",
+            "GQM",
+            "GQM+Strategies",
+            "Alignment"
+        ],
+        "doi": "https://doi.org/10.1016/j.infsof.2017.04.004",
+        "journal_impact_factor": "2.921"
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/7542343",
+        "title": "Data-mining a mechanism against cyber threats: A review",
+        "authors": [
+            "Shipra Ravi Kumar ;",
+            "J. S. Jassi ;",
+            "Suman Avdhesh Yadav ;",
+            "Ravi Sharma"
+        ],
+        "journal": "2016 International Conference on Innovation and Challenges in Cyber Security (ICICCS-INBUSH)",
+        "citations": "400",
+        "publish_date": "2016",
+        "keywords": [
+            "Data mining",
+            "Clustering algorithms",
+            "Computer security",
+            "Machine learning algorithms",
+            "Algorithm design and analysis",
+            "Partitioning algorithms",
+            "MAP",
+            "WEKA",
+            "Cyber Threats",
+            "Intrusion Detection"
+        ],
+        "doi": "10.1109/ICICCS.2016.7542343",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/6246089/citations?tabFilter=patents#anchor-patent-citations",
+        "title": "A propose technical security metrics model for SCADA systems",
+        "authors": [
+            "M.P. Azuwa ;",
+            "Rabiah Ahmad ;",
+            "Shahrin Sahib ;",
+            "Solahuddin Shamsuddin"
+        ],
+        "journal": "Proceedings Title: 2012 International Conference on Cyber Security, Cyber Warfare and Digital Forensic (CyberSec)",
+        "citations": "1",
+        "publish_date": "2012",
+        "keywords": [
+            "Measurement",
+            "ISO standards",
+            "IEC standards",
+            "Information security",
+            "Standards organizations",
+            "Information security metrics",
+            "technical security metrics model",
+            "SCADA",
+            "ISO/IEC 27001:2005",
+            "ISO/IEC 27004:2009",
+            "Critical National Information Infrastructure"
+        ],
+        "doi": "10.1109/CyberSec.2012.6246089",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "sciencedirect",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0167404819301324",
+        "title": "The least secure places in the universe? A systematic literature review on information security management in higher education",
+        "authors": [
+            {
+                "surname": "Bongiovanni",
+                "first_name": "Ivano"
+            }
+        ],
+        "journal": "Computers & Security",
+        "citations": "14",
+        "publish_date": "2019",
+        "keywords": [
+            "Information security management",
+            "Cybersecurity",
+            "Higher education",
+            "University",
+            "Strategic information systems"
+        ],
+        "doi": "https://doi.org/10.1016/j.cose.2019.07.003",
+        "journal_impact_factor": "3.062"
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/7203118",
+        "title": "A Security Practices Evaluation Framework",
+        "authors": [
+            "Patrick Morrison"
+        ],
+        "journal": "2015 IEEE/ACM 37th IEEE International Conference on Software Engineering",
+        "citations": "1",
+        "publish_date": "2015",
+        "keywords": [
+            "Security",
+            "Software",
+            "Software measurement",
+            "Ontologies",
+            "Context",
+            "Size measurement",
+            "Process control",
+            "Security",
+            "Quality",
+            "Measurement Frameworks",
+            "Software Development Lifecycle."
+        ],
+        "doi": "10.1109/ICSE.2015.296",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "sciencedirect",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0167404817301839",
+        "title": "A survey on technical threat intelligence in the age of sophisticated cyber attacks",
+        "authors": [
+            {
+                "surname": "Tounsi",
+                "first_name": "Wiem"
+            },
+            {
+                "surname": "Rais",
+                "first_name": "Helmi"
+            }
+        ],
+        "journal": "Computers & Security",
+        "citations": "19",
+        "publish_date": "2018",
+        "keywords": [
+            "Technical threat intelligence",
+            "Indicators of compromise (IOC)",
+            "Malware",
+            "Trust",
+            "Reputation",
+            "Ontologies",
+            "Cyber crime",
+            "Preventative strategies",
+            "Risk analysis",
+            "Threat sharing"
+        ],
+        "doi": "https://doi.org/10.1016/j.cose.2017.09.001",
+        "journal_impact_factor": "3.062"
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/8661018",
+        "title": "A New Adaptive Cyber-security Capability Maturity Model",
+        "authors": [
+            "Fariba Ghaffari ;",
+            "Abouzar Arabsorkhi"
+        ],
+        "journal": "2018 9th International Symposium on Telecommunications (IST)",
+        "citations": "112",
+        "publish_date": "2018",
+        "keywords": [
+            "Capability maturity model",
+            "Organizations",
+            "Standards organizations",
+            "Information security",
+            "Computer security",
+            "Measurement",
+            "Information Security",
+            "Security Measurement",
+            "Maturity Model",
+            "Systematic Literature Review"
+        ],
+        "doi": "10.1109/ISTEL.2018.8661018",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/7473537",
+        "title": "A design review: Concepts for mitigating SQL injection attacks",
+        "authors": [
+            "Ed Pearson ;",
+            "Cindy L. Bethel"
+        ],
+        "journal": "2016 4th International Symposium on Digital Forensic and Security (ISDFS)",
+        "citations": "562",
+        "publish_date": "2016",
+        "keywords": [
+            "Computer security",
+            "Software",
+            "Computer science",
+            "Business",
+            "Human computer interaction",
+            "SQL injection attacks",
+            "SQL injection attack mitigation",
+            "SQL injection attack prevention",
+            "Human-computer interaction",
+            "software security",
+            "information security",
+            "cyber security"
+        ],
+        "doi": "10.1109/ISDFS.2016.7473537",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/6578847",
+        "title": "Christopher Alexander's fifteen properties: Toward developing evaluation metrics for security visualizations",
+        "authors": [
+            "Ziyad Alshaikh ;",
+            "Abdulrahman Alarifi ;",
+            "Mansour Alsaleh"
+        ],
+        "journal": "2013 IEEE International Conference on Intelligence and Security Informatics",
+        "citations": "1",
+        "publish_date": "2013",
+        "keywords": [
+            "Data visualization",
+            "Security",
+            "Shape",
+            "Clocks",
+            "Image color analysis",
+            "Visualization",
+            "Context",
+            "Security visualizations",
+            "Evaluation of security visualizations",
+            "Information visualization",
+            "Security intelligence",
+            "Security Informatics"
+        ],
+        "doi": "10.1109/ISI.2013.6578847",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/7436199",
+        "title": "Network security metric based on attack duration",
+        "authors": [
+            "Shahab Forghani ;",
+            "Navid Habibi ;",
+            "Mohsen Firoozbakht"
+        ],
+        "journal": "2015 2nd International Conference on Knowledge-Based Engineering and Innovation (KBEI)",
+        "citations": "103",
+        "publish_date": "2015",
+        "keywords": [
+            "Security",
+            "Measurement",
+            "Communication networks",
+            "Statistical analysis",
+            "Network security",
+            "Security Metric",
+            "Attack Duration",
+            "Time Metric"
+        ],
+        "doi": "10.1109/KBEI.2015.7436199",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "sciencedirect",
+        "url": "https://www.sciencedirect.com/science/article/pii/S1084804518303692",
+        "title": "A review on security challenges of wireless communications in disaster emergency response and crisis management situations",
+        "authors": [
+            {
+                "surname": "Seba",
+                "first_name": "Abderazek"
+            },
+            {
+                "surname": "Nouali-Taboudjemat",
+                "first_name": "Nadia"
+            },
+            {
+                "surname": "Badache",
+                "first_name": "Nadjib"
+            },
+            {
+                "surname": "Seba",
+                "first_name": "Hamida"
+            }
+        ],
+        "journal": "Journal of Network and Computer Applications",
+        "citations": "1",
+        "publish_date": "January",
+        "keywords": [
+            "Wireless communication",
+            "Emergency situations",
+            "Security",
+            "Crisis"
+        ],
+        "doi": "https://doi.org/10.1016/j.jnca.2018.11.010",
+        "journal_impact_factor": "5.273"
+    },
+    {
+        "database": "sciencedirect",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0167404818303262",
+        "title": "Is the responsibilization of the cyber security risk reasonable and judicious?",
+        "authors": [
+            {
+                "surname": "Renaud",
+                "first_name": "Karen"
+            },
+            {
+                "surname": "Flowerday",
+                "first_name": "Stephen"
+            },
+            {
+                "surname": "Warkentin",
+                "first_name": "Merrill"
+            },
+            {
+                "surname": "Cockshott",
+                "first_name": "Paul"
+            },
+            {
+                "surname": "Orgeron",
+                "first_name": "Craig"
+            }
+        ],
+        "journal": "Computers & Security",
+        "citations": "2",
+        "publish_date": "2018",
+        "keywords": [
+            "Cyber security",
+            "Responsibilization",
+            "Neoliberalism",
+            "Risk regulation",
+            "Hierarchism",
+            "Risk management"
+        ],
+        "doi": "https://doi.org/10.1016/j.cose.2018.06.006",
+        "journal_impact_factor": "3.062"
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/4561338",
+        "title": "Efficient Security Measurements and Metrics for Risk Assessment",
+        "authors": [
+            "I. Tashi ;",
+            "S. Ghernaouti\u2013H\u00e9lie"
+        ],
+        "journal": "2008 The Third International Conference on Internet Monitoring and Protection",
+        "citations": "3",
+        "publish_date": "2008",
+        "keywords": [
+            "Security",
+            "Risk management",
+            "Information Security (IS) Management",
+            "IS metrics and measurements",
+            "IS assessment",
+            "IS Assurance",
+            "Risk analysis",
+            "Risk Management",
+            "Complex Environments",
+            "IS Management effectiveness and efficiency"
+        ],
+        "doi": "10.1109/ICIMP.2008.34",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/5335549",
+        "title": "Information security metric integrating enterprise objectives",
+        "authors": [
+            "Bugra Karabey ;",
+            "Nazife Baykal"
+        ],
+        "journal": "43rd Annual 2009 International Carnahan Conference on Security Technology",
+        "citations": "207",
+        "publish_date": "2009",
+        "keywords": [
+            "Information security",
+            "Information technology",
+            "Risk analysis",
+            "Risk management",
+            "Availability",
+            "Information filtering",
+            "Information filters",
+            "Scalability",
+            "Companies",
+            "Information management",
+            "Information security",
+            "risk metrics",
+            "attack trees",
+            "enterprise objectives",
+            "resource based view"
+        ],
+        "doi": "10.1109/CCST.2009.5335549",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/1713284",
+        "title": "A Novel Approach to Cyberspace Security Situation Based on the Vulnerabilities Analysis",
+        "authors": [
+            "Wei Hu ;",
+            "Jianhua Li ;",
+            "Jianjun Shi"
+        ],
+        "journal": "2006 6th World Congress on Intelligent Control and Automation",
+        "citations": "5",
+        "publish_date": "2006",
+        "keywords": [
+            "Computer security",
+            "Data security",
+            "Information security",
+            "Risk management",
+            "Statistical analysis",
+            "Network topology",
+            "Risk analysis",
+            "Engineering management",
+            "State estimation",
+            "Algorithm design and analysis",
+            "Security Management",
+            "Security Situation",
+            "Situational Awareness",
+            "Security Vulnerabilities"
+        ],
+        "doi": "10.1109/WCICA.2006.1713284",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/5375543/keywords#keywords",
+        "title": "Visualization is better! A comparative evaluation",
+        "authors": [
+            "John R. Goodall"
+        ],
+        "journal": "2009 6th International Workshop on Visualization for Cyber Security",
+        "citations": "18",
+        "publish_date": "2009",
+        "keywords": [],
+        "doi": "10.1109/VIZSEC.2009.5375543",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/8320362",
+        "title": "A Systematic Review of the Availability and Efficacy of Countermeasures to Internal Threats in Healthcare Critical Infrastructure",
+        "authors": [
+            "Steven Walker-Roberts ;",
+            "Mohammad Hammoudeh ;",
+            "Ali Dehghantanha"
+        ],
+        "journal": "IEEE Access",
+        "citations": "2",
+        "publish_date": "2018",
+        "keywords": [
+            "Systematics",
+            "Medical services",
+            "Critical infrastructure",
+            "Computer crime",
+            "Databases",
+            "Critical infrastructure security",
+            "personal data safety",
+            "healthcare",
+            "data breach",
+            "insider threat",
+            "meta-data",
+            "sabotage",
+            "systematic review",
+            "thematic analysis",
+            "unprivileged",
+            "untrusted",
+            "zero trust"
+        ],
+        "doi": "10.1109/ACCESS.2018.2817560",
+        "journal_impact_factor": "4.098"
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/6984212",
+        "title": "The Impact of Cyber Security Issues on Businesses and Governments: A Framework for Implementing a Cyber Security Plan",
+        "authors": [
+            "Hajar Iguer ;",
+            "Hicham Medromi ;",
+            "Adil Sayouti ;",
+            "Soukaina Elhasnaoui ;",
+            "Sophia Faris"
+        ],
+        "journal": "2014 International Conference on Future Internet of Things and Cloud",
+        "citations": "5",
+        "publish_date": "2014",
+        "keywords": [
+            "Computer security",
+            "Information security",
+            "Multi-agent systems",
+            "Government",
+            "information security",
+            "cyber security",
+            "IT governance",
+            "multi-agents systems",
+            "cyber security plan"
+        ],
+        "doi": "10.1109/FiCloud.2014.56",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/6980325",
+        "title": "Visualization of Security Metrics for Cyber Situation Awareness",
+        "authors": [
+            "Igor Kotenko ;",
+            "Evgenia Novikova"
+        ],
+        "journal": "2014 Ninth International Conference on Availability, Reliability and Security",
+        "citations": "3",
+        "publish_date": "2014",
+        "keywords": [
+            "Security",
+            "Layout",
+            "Visualization",
+            "Measurement",
+            "Availability",
+            "Abstracts",
+            "cyber situation awareness",
+            "security information visualization",
+            "high level metrics visualization",
+            "network security level assessment"
+        ],
+        "doi": "10.1109/ARES.2014.75",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "sciencedirect",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0267364918301201",
+        "title": "Patching the patchwork: appraising the EU regulatory framework on cyber security breaches",
+        "authors": [
+            {
+                "surname": "Porcedda",
+                "first_name": "Maria Grazia"
+            }
+        ],
+        "journal": "Computer Law & Security Review",
+        "citations": "3",
+        "publish_date": "5",
+        "keywords": [
+            "Data breaches",
+            "Security breaches",
+            "Cyber security",
+            "Data protection",
+            "Network and information security",
+            "Cloud computing",
+            "Data security breaches"
+        ],
+        "doi": "https://doi.org/10.1016/j.clsr.2018.04.009",
+        "journal_impact_factor": "1.552"
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/6890934",
+        "title": "Quantifying the financial impact of it security breaches on business processes",
+        "authors": [
+            "Clemens Martin ;",
+            "Amina Kadry ;",
+            "Ghada Abu-Shady"
+        ],
+        "journal": "2014 Twelfth Annual International Conference on Privacy, Security and Trust",
+        "citations": "1",
+        "publish_date": "2014",
+        "keywords": [
+            "Analytical models",
+            "Companies",
+            "Information security",
+            "Productivity",
+            "Information security breach",
+            "cost assessment",
+            "risk assessment",
+            "simulation",
+            "Colored Petri Nets",
+            "CPN",
+            "information security management"
+        ],
+        "doi": "10.1109/PST.2014.6890934",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/6798561",
+        "title": "Quantitative Security Metrics: Unattainable Holy Grail or a Vital Breakthrough within Our Reach?",
+        "authors": [
+            "William H. Sanders"
+        ],
+        "journal": "IEEE Security & Privacy",
+        "citations": "10",
+        "publish_date": "2014",
+        "keywords": [
+            "Failure analysis",
+            "Risk management",
+            "Computer security",
+            "Estimation",
+            "Prediction models",
+            "Benchmark testing",
+            "computer security",
+            "security metrics",
+            "quantitative security metrics",
+            "risk management",
+            "trustworthy computing"
+        ],
+        "doi": "10.1109/MSP.2014.31",
+        "journal_impact_factor": "1.596"
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/4721558",
+        "title": "Improving Security Visualization with Exposure Map Filtering",
+        "authors": [
+            "Mansour Alsaleh ;",
+            "David Barrera ;",
+            "P.C. van Oorschot"
+        ],
+        "journal": "2008 Annual Computer Security Applications Conference (ACSAC)",
+        "citations": "4",
+        "publish_date": "2008",
+        "keywords": [
+            "Telecommunication traffic",
+            "Data security",
+            "Data visualization",
+            "Pattern analysis",
+            "Computer security",
+            "Filtering",
+            "Reconnaissance",
+            "Filters",
+            "Information security",
+            "Humans"
+        ],
+        "doi": "10.1109/ACSAC.2008.16",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/6845061",
+        "title": "Industrial cyber security solutions for the connected enterprise",
+        "authors": [
+            "Luis Parrondo"
+        ],
+        "journal": "IET Seminar on Cyber Security for Industrial Control Systems",
+        "citations": "417",
+        "publish_date": "2014",
+        "keywords": [],
+        "doi": "10.1049/ic.2014.0012",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "sciencedirect",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0167739X18316753",
+        "title": "Government regulations in cyber security: Framework, standards and recommendations",
+        "authors": [
+            {
+                "surname": "Srinivas",
+                "first_name": "Jangirala"
+            },
+            {
+                "surname": "Das",
+                "first_name": "Ashok Kumar"
+            },
+            {
+                "surname": "Kumar",
+                "first_name": "Neeraj"
+            }
+        ],
+        "journal": "Future Generation Computer Systems",
+        "citations": "2",
+        "publish_date": "2019",
+        "keywords": [
+            "Cyber security",
+            "Cyber attacks",
+            "Information security",
+            "Government policies",
+            "Standards"
+        ],
+        "doi": "https://doi.org/10.1016/j.future.2018.09.063",
+        "journal_impact_factor": "5.768"
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/6108598",
+        "title": "Security metrics: A brief survey",
+        "authors": [
+            "Tito Waluyo Purboyo ;",
+            "Budi Rahardjo ;",
+            "Kuspriyanto"
+        ],
+        "journal": "2011 2nd International Conference on Instrumentation, Communications, Information Technology, and Biomedical Engineering",
+        "citations": "1",
+        "publish_date": "2011",
+        "keywords": [
+            "Security",
+            "Software",
+            "Biomedical measurements",
+            "Organizations",
+            "Taxonomy",
+            "Information technology",
+            "Security",
+            "Metrics",
+            "Taxonomy"
+        ],
+        "doi": "10.1109/ICICI-BME.2011.6108598",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/6113298",
+        "title": "Trend Analysis of the CVE for Software Vulnerability Management",
+        "authors": [
+            "Yung-Yu Chang ;",
+            "Pavol Zavarsky ;",
+            "Ron Ruhl ;",
+            "Dale Lindskog"
+        ],
+        "journal": "2011 IEEE Third International Conference on Privacy, Security, Risk and Trust and 2011 IEEE Third International Conference on Social Computing",
+        "citations": "6",
+        "publish_date": "2011",
+        "keywords": [
+            "Measurement",
+            "Software",
+            "Authentication",
+            "Databases",
+            "Complexity theory",
+            "Forgery",
+            "vulnerability type",
+            "vulnerability trend",
+            "CVE",
+            "NVD",
+            "CVSS version2"
+        ],
+        "doi": "10.1109/PASSAT/SocialCom.2011.184",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/6165764",
+        "title": "A framework for security metrics based on operational system attributes",
+        "authors": [
+            "Erland Jonsson ;",
+            "Laleh Pirzadeh"
+        ],
+        "journal": "2011 Third International Workshop on Security Measurements and Metrics",
+        "citations": "4",
+        "publish_date": "2011",
+        "keywords": [
+            "Security",
+            "Measurement",
+            "Availability",
+            "Safety",
+            "Conferences",
+            "NIST",
+            "operational security",
+            "security metrics",
+            "modelling",
+            "effort-based metrics",
+            "behavioural metrics"
+        ],
+        "doi": "10.1109/Metrisec.2011.19",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/6246089",
+        "title": "A propose technical security metrics model for SCADA systems",
+        "authors": [
+            "M.P. Azuwa ;",
+            "Rabiah Ahmad ;",
+            "Shahrin Sahib ;",
+            "Solahuddin Shamsuddin"
+        ],
+        "journal": "Proceedings Title: 2012 International Conference on Cyber Security, Cyber Warfare and Digital Forensic (CyberSec)",
+        "citations": "1",
+        "publish_date": "2012",
+        "keywords": [
+            "Measurement",
+            "ISO standards",
+            "IEC standards",
+            "Information security",
+            "Standards organizations",
+            "Information security metrics",
+            "technical security metrics model",
+            "SCADA",
+            "ISO/IEC 27001:2005",
+            "ISO/IEC 27004:2009",
+            "Critical National Information Infrastructure"
+        ],
+        "doi": "10.1109/CyberSec.2012.6246089",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "sciencedirect",
+        "url": "https://www.sciencedirect.com/science/article/pii/S1877750317303605",
+        "title": "Simulation platform for cyber-security and vulnerability analysis of critical infrastructures",
+        "authors": [
+            {
+                "surname": "Ficco",
+                "first_name": "Massimo"
+            },
+            {
+                "surname": "Chora\u015b",
+                "first_name": "Micha\u0142"
+            },
+            {
+                "surname": "Kozik",
+                "first_name": "Rafa\u0142"
+            }
+        ],
+        "journal": "Journal of Computational Science",
+        "citations": "11",
+        "publish_date": "2017",
+        "keywords": [
+            "Critical infrastructures",
+            "Cyber-security",
+            "Simulation",
+            "HLA",
+            "Penetration testing",
+            "Cloud computing"
+        ],
+        "doi": "https://doi.org/10.1016/j.jocs.2017.03.025",
+        "journal_impact_factor": "2.502"
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/1509322",
+        "title": "Software measurement in large",
+        "authors": [
+            "G. Guta"
+        ],
+        "journal": "11th IEEE International Software Metrics Symposium (METRICS'05)",
+        "citations": "89",
+        "publish_date": "2005",
+        "keywords": [
+            "Software measurement",
+            "Open source software",
+            "Statistical analysis",
+            "Software metrics",
+            "Computer architecture",
+            "Publishing",
+            "Object oriented modeling",
+            "Information technology",
+            "Software systems",
+            "Large-scale systems"
+        ],
+        "doi": "10.1109/METRICS.2005.42",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "sciencedirect",
+        "url": "https://www.sciencedirect.com/science/article/pii/S1084804517300541",
+        "title": "A framework for automating security analysis of the internet of things",
+        "authors": [
+            {
+                "surname": "Ge",
+                "first_name": "Mengmeng"
+            },
+            {
+                "surname": "Hong",
+                "first_name": "Jin B."
+            },
+            {
+                "surname": "Guttmann",
+                "first_name": "Walter"
+            },
+            {
+                "surname": "Kim",
+                "first_name": "Dong Seong"
+            }
+        ],
+        "journal": "Journal of Network and Computer Applications",
+        "citations": "38",
+        "publish_date": "April",
+        "keywords": [
+            "Attack graphs",
+            "Internet of things",
+            "Security analysis",
+            "Security modeling"
+        ],
+        "doi": "https://doi.org/10.1016/j.jnca.2017.01.033",
+        "journal_impact_factor": "5.273"
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/8661018/keywords#keywords",
+        "title": "A New Adaptive Cyber-security Capability Maturity Model",
+        "authors": [
+            "Fariba Ghaffari ;",
+            "Abouzar Arabsorkhi"
+        ],
+        "journal": "2018 9th International Symposium on Telecommunications (IST)",
+        "citations": "112",
+        "publish_date": "2018",
+        "keywords": [],
+        "doi": "10.1109/ISTEL.2018.8661018",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/7335053/keywords#keywords",
+        "title": "A formal qualitative risk management approach for IT security",
+        "authors": [
+            "Bessy Mahopo ;",
+            "Hanifa Abdullah ;",
+            "Mathias Mujinga"
+        ],
+        "journal": "2015 Information Security for South Africa (ISSA)",
+        "citations": "503",
+        "publish_date": "2015",
+        "keywords": [],
+        "doi": "10.1109/ISSA.2015.7335053",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/5487236",
+        "title": "NetVis: A network security management visualization tool based on treemap",
+        "authors": [
+            "Zhongyang Kan ;",
+            "Changzhen Hu ;",
+            "Zhigang Wang ;",
+            "Guoqiang Wang ;",
+            "Xiaolong Huang"
+        ],
+        "journal": "2010 2nd International Conference on Advanced Computer Control",
+        "citations": "1",
+        "publish_date": "2010",
+        "keywords": [
+            "Information security",
+            "Data security",
+            "Data visualization",
+            "Computer network management",
+            "Computer security",
+            "Technology management",
+            "Laboratories",
+            "Information technology",
+            "IP networks",
+            "Application software",
+            "network security visualization",
+            "network management",
+            "treemap",
+            "prefuse"
+        ],
+        "doi": "10.1109/ICACC.2010.5487236",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/8428412",
+        "title": "Security Data Collection and Data Analytics in the Internet: A Survey",
+        "authors": [
+            "Xuyang Jing ;",
+            "Zheng Yan ;",
+            "Witold Pedrycz"
+        ],
+        "journal": "IEEE Communications Surveys & Tutorials",
+        "citations": "3",
+        "publish_date": "2018",
+        "keywords": [
+            "Computer crime",
+            "Internet",
+            "Grippers",
+            "Protocols",
+            "Data analysis",
+            "Data collection",
+            "Security-related data",
+            "data collection",
+            "data analytics",
+            "DDoS flooding attacks",
+            "worm attacks",
+            "security measurement"
+        ],
+        "doi": "10.1109/COMST.2018.2863942",
+        "journal_impact_factor": "22.973"
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/5168080",
+        "title": "Identifying network attacks from a social perspective",
+        "authors": [
+            "Lindsay Hopper ;",
+            "Ronald Hopper ;",
+            "Phillip Womble"
+        ],
+        "journal": "2009 IEEE Conference on Technologies for Homeland Security",
+        "citations": "329",
+        "publish_date": "2009",
+        "keywords": [
+            "Computer hacking",
+            "Terrorism",
+            "Laboratories",
+            "Collaboration",
+            "Computer networks",
+            "Government",
+            "Law enforcement",
+            "Data security",
+            "Computer security",
+            "Testing"
+        ],
+        "doi": "10.1109/THS.2009.5168080",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "sciencedirect",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S0920548910000255",
+        "title": "A systematic review of security requirements engineering",
+        "authors": [
+            {
+                "surname": "Mellado",
+                "first_name": "Daniel"
+            },
+            {
+                "surname": "Blanco",
+                "first_name": "Carlos"
+            },
+            {
+                "surname": "S\u00e1nchez",
+                "first_name": "Luis E."
+            },
+            {
+                "surname": "Fern\u00e1ndez-Medina",
+                "first_name": "Eduardo"
+            }
+        ],
+        "journal": "Computer Standards & Interfaces",
+        "citations": "92",
+        "publish_date": "4",
+        "keywords": [
+            "Security requirements",
+            "Security requirements engineering",
+            "Requirements engineering",
+            "Security engineering",
+            "Secure development",
+            "Security",
+            "Systematic review"
+        ],
+        "doi": "https://doi.org/10.1016/j.csi.2010.01.006",
+        "journal_impact_factor": "2.441"
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/8109087",
+        "title": "Experience Report: Study of Vulnerabilities of Enterprise Operating Systems",
+        "authors": [
+            "Anatoliy Gorbenko ;",
+            "Alexander Romanovsky ;",
+            "Olga Tarasyuk ;",
+            "Oleksandr Biloborodov"
+        ],
+        "journal": "2017 IEEE 28th International Symposium on Software Reliability Engineering (ISSRE)",
+        "citations": "2",
+        "publish_date": "2017",
+        "keywords": [
+            "Security",
+            "Databases",
+            "Servers",
+            "Linux",
+            "security",
+            "vulnerability",
+            "operating systems",
+            "vulnerability databases",
+            "days-of-risk",
+            "forever-day vulnerabilities",
+            "vulnerability life cycle",
+            "vulnerability statistics"
+        ],
+        "doi": "10.1109/ISSRE.2017.20",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/4783996",
+        "title": "Application of Security Metrics in Auditing Computer Network Security: A Case Study",
+        "authors": [
+            "Upeka Premaratne ;",
+            "Jagath Samarabandu ;",
+            "Tarlochan Sidhu ;",
+            "Bob Beresh ;",
+            "Jian-Cheng Tan"
+        ],
+        "journal": "2008 4th International Conference on Information and Automation for Sustainability",
+        "citations": "9",
+        "publish_date": "2008",
+        "keywords": [
+            "Computer security",
+            "Application software",
+            "Computer networks",
+            "Information security",
+            "Data security",
+            "Storage area networks",
+            "Cost benefit analysis",
+            "Privacy",
+            "Design methodology",
+            "Context modeling",
+            "Information Security",
+            "Computer Network Security",
+            "Information Security Metrics",
+            "Information Security Auditing",
+            "Computer Network Security Auditing",
+            "Common Vulnerability Scoring System",
+            "VEA-bility Score",
+            "Mean Time to Compromise"
+        ],
+        "doi": "10.1109/ICIAFS.2008.4783996",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "sciencedirect",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0167404818310629",
+        "title": "Designing an efficient security framework for detecting intrusions in virtual network of cloud computing",
+        "authors": [
+            {
+                "surname": "Patil",
+                "first_name": "Rajendra"
+            },
+            {
+                "surname": "Dudeja",
+                "first_name": "Harsha"
+            },
+            {
+                "surname": "Modi",
+                "first_name": "Chirag"
+            }
+        ],
+        "journal": "Computers & Security",
+        "citations": "1",
+        "publish_date": "2019",
+        "keywords": [
+            "Cloud computing",
+            "Virtual network security",
+            "Intrusion detection",
+            "Binary bat algorithm",
+            "Random Forest"
+        ],
+        "doi": "https://doi.org/10.1016/j.cose.2019.05.016",
+        "journal_impact_factor": "3.062"
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/4454142",
+        "title": "Application of Vulnerability Discovery Models to Major Operating Systems",
+        "authors": [
+            "Omar H. Alhazmi ;",
+            "Yashwant K. Malaiya"
+        ],
+        "journal": "IEEE Transactions on Reliability",
+        "citations": "64",
+        "publish_date": "2008",
+        "keywords": [
+            "Operating systems",
+            "Security",
+            "Software reliability",
+            "Software testing",
+            "Resource management",
+            "Investments",
+            "Linux",
+            "Software systems",
+            "Life testing",
+            "System testing",
+            "Operating systems",
+            "security",
+            "software reliability growth models",
+            "vulnerabilities",
+            "vulnerability discovery"
+        ],
+        "doi": "10.1109/TR.2008.916872",
+        "journal_impact_factor": "2.888"
+    },
+    {
+        "database": "sciencedirect",
+        "url": "https://www.sciencedirect.com/science/article/pii/S1367578819300203",
+        "title": "A control-theoretic perspective on cyber-physical privacy: Where data privacy meets dynamic systems",
+        "authors": [
+            {
+                "surname": "Lu",
+                "first_name": "Yang"
+            },
+            {
+                "surname": "Zhu",
+                "first_name": "Minghui"
+            }
+        ],
+        "journal": "Annual Reviews in Control",
+        "citations": null,
+        "publish_date": "2019",
+        "keywords": [
+            "Cyber-physical systems",
+            "Privacy"
+        ],
+        "doi": "https://doi.org/10.1016/j.arcontrol.2019.04.010",
+        "journal_impact_factor": "4.759"
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/6606612",
+        "title": "Automated software architecture security risk analysis using formalized signatures",
+        "authors": [
+            "Mohamed Almorsy ;",
+            "John Grundy ;",
+            "Amani S. Ibrahim"
+        ],
+        "journal": "2013 35th International Conference on Software Engineering (ICSE)",
+        "citations": "14",
+        "publish_date": "2013",
+        "keywords": [
+            "Security",
+            "Measurement",
+            "Computer architecture",
+            "Unified modeling language",
+            "Software",
+            "Software architecture",
+            "Risk analysis",
+            "Software security",
+            "Architecture Security Risk analysis",
+            "Formal attack patterns specification",
+            "Common attack patterns enumeration and classification (CAPEC)"
+        ],
+        "doi": "10.1109/ICSE.2013.6606612",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/8470942",
+        "title": "Survey of Attack Projection, Prediction, and Forecasting in Cyber Security",
+        "authors": [
+            "Martin Hus\u00e1k ;",
+            "Jana Kom\u00e1rkov\u00e1 ;",
+            "Elias Bou-Harb ;",
+            "Pavel \u010celeda"
+        ],
+        "journal": "NaJ",
+        "citations": "1",
+        "publish_date": null,
+        "keywords": [
+            "Task analysis",
+            "Forecasting",
+            "Cyberattack",
+            "Communication networks",
+            "Intrusion detection",
+            "Cyber security",
+            "intrusion detection",
+            "situational awareness",
+            "prediction",
+            "forecasting",
+            "model checking"
+        ],
+        "doi": "10.1109/COMST.2018.2871866",
+        "journal_impact_factor": "22.973"
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/795288",
+        "title": "IT-security in electronic commerce: from cost to value driver",
+        "authors": [
+            "R. Holbein ;",
+            "R. Gaugler"
+        ],
+        "journal": "Proceedings. Tenth International Workshop on Database and Expert Systems Applications. DEXA 99",
+        "citations": "3",
+        "publish_date": "1999",
+        "keywords": [
+            "Electronic commerce",
+            "Costs",
+            "Driver circuits",
+            "Risk management",
+            "Internet",
+            "Computer science",
+            "Consumer electronics",
+            "Data security",
+            "Uncertainty"
+        ],
+        "doi": "10.1109/DEXA.1999.795288",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "sciencedirect",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0278425418302400",
+        "title": "Trade secrets and cyber security breaches",
+        "authors": [
+            {
+                "surname": "Ettredge",
+                "first_name": "Michael"
+            },
+            {
+                "surname": "Guo",
+                "first_name": "Feng"
+            },
+            {
+                "surname": "Li",
+                "first_name": "Yijun"
+            }
+        ],
+        "journal": "Journal of Accounting and Public Policy",
+        "citations": null,
+        "publish_date": "6",
+        "keywords": [],
+        "doi": "https://doi.org/10.1016/j.jaccpubpol.2018.10.006",
+        "journal_impact_factor": "2.269"
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/4042656",
+        "title": "Estimating Potential IT Security Losses: An Alternative Quantitative Approach",
+        "authors": [
+            "Vincent C.s. Lee ;",
+            "Linyi Shao"
+        ],
+        "journal": "IEEE Security & Privacy",
+        "citations": "5",
+        "publish_date": "2006",
+        "keywords": [
+            "Information security",
+            "Data security",
+            "Loss measurement",
+            "Frequency estimation",
+            "Investments",
+            "Information analysis",
+            "Computer security",
+            "Current measurement",
+            "Cost benefit analysis",
+            "Risk management",
+            "quantitative measuring of IT security loss",
+            "jump diffusion process",
+            "port scan data"
+        ],
+        "doi": "10.1109/MSP.2006.151",
+        "journal_impact_factor": "1.596"
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/5560632/keywords#keywords",
+        "title": "Vulnerability Analysis in SOA-Based Business Processes",
+        "authors": [
+            "Lutz Lowis ;",
+            "Rafael Accorsi"
+        ],
+        "journal": "IEEE Transactions on Services Computing",
+        "citations": "26",
+        "publish_date": "2010",
+        "keywords": [],
+        "doi": "10.1109/TSC.2010.37",
+        "journal_impact_factor": "5.707"
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/6060509",
+        "title": "Analysis of actual IT security incident in an organization by using IT security implementation model",
+        "authors": [
+            "Masashi Sugiura ;",
+            "Hirohiko Suwa ;",
+            "Toshizumi Ohta"
+        ],
+        "journal": "SICE Annual Conference 2011",
+        "citations": "149",
+        "publish_date": "2011",
+        "keywords": [
+            "Games",
+            "Security",
+            "Analytical models",
+            "Loss measurement",
+            "Accidents",
+            "Organizations",
+            "Nash equilibrium",
+            "security",
+            "game theory",
+            "model",
+            "dilemma",
+            "organization"
+        ],
+        "doi": null,
+        "journal_impact_factor": null
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/5689505",
+        "title": "Introducing a framework for security measurements",
+        "authors": [
+            "Morteza Ansari Dogaheh"
+        ],
+        "journal": "2010 IEEE International Conference on Information Theory and Information Security",
+        "citations": "314",
+        "publish_date": "2010",
+        "keywords": [
+            "Organizations",
+            "Standards organizations",
+            "Measurement",
+            "Information security",
+            "Delta modulation",
+            "Indexes",
+            "security metrics",
+            "measurement",
+            "indicators"
+        ],
+        "doi": "10.1109/ICITIS.2010.5689505",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/8085770",
+        "title": "Towards visual analytics tasks for the security information and event management",
+        "authors": [
+            "Evgenia S. Novikova ;",
+            "Yana A. Bekeneva ;",
+            "Andrey V. Shorov"
+        ],
+        "journal": "2017 International Conference \"Quality Management,Transport and Information Security, Information Technologies\" (IT&QM&IS)",
+        "citations": "344",
+        "publish_date": "2017",
+        "keywords": [
+            "Visual analytics",
+            "Data visualization",
+            "Information security",
+            "Monitoring",
+            "visual analytics",
+            "information security",
+            "SIEM-systems",
+            "data visualization"
+        ],
+        "doi": "10.1109/ITMQIS.2017.8085770",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/7065960",
+        "title": "Application of Mean Time-to-Compromise and VEA-bility security metrics in auditing computer network security",
+        "authors": [
+            "Emir Husni ;",
+            "Yustika Kurniati"
+        ],
+        "journal": "2014 8th International Conference on Telecommunication Systems Services and Applications (TSSA)",
+        "citations": "1",
+        "publish_date": "2014",
+        "keywords": [
+            "Security",
+            "Measurement",
+            "Communication networks",
+            "Buildings",
+            "Computer networks",
+            "Equations",
+            "Mathematical model",
+            "security metric",
+            "security audit",
+            "Mean Time-to-Compromise",
+            "CVSS",
+            "VEA-bility component"
+        ],
+        "doi": "10.1109/TSSA.2014.7065960",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "sciencedirect",
+        "url": "https://www.sciencedirect.com/science/article/pii/S1874548217300422",
+        "title": "A comprehensive instrument for identifying critical information infrastructure services",
+        "authors": [
+            {
+                "surname": "Herrera",
+                "first_name": "Luis-Carlos"
+            },
+            {
+                "surname": "Maennel",
+                "first_name": "Olaf"
+            }
+        ],
+        "journal": "International Journal of Critical Infrastructure Protection",
+        "citations": "14",
+        "publish_date": "2019",
+        "keywords": [
+            "Critical Information Infrastructure",
+            "Critical Infrastructure",
+            "Criticality Criteria",
+            "Cyber Dependence",
+            "Cascading effect",
+            "Information and Communication Technology",
+            "68U35"
+        ],
+        "doi": "https://doi.org/10.1016/j.ijcip.2019.02.001",
+        "journal_impact_factor": "2.225"
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/6165764/keywords#keywords",
+        "title": "A framework for security metrics based on operational system attributes",
+        "authors": [
+            "Erland Jonsson ;",
+            "Laleh Pirzadeh"
+        ],
+        "journal": "2011 Third International Workshop on Security Measurements and Metrics",
+        "citations": "4",
+        "publish_date": "2011",
+        "keywords": [],
+        "doi": "10.1109/Metrisec.2011.19",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/5461217",
+        "title": "An expert system for security diagnosing of construction producing by CBR",
+        "authors": [
+            "Chang Chunguang ;",
+            "Chen Dongwen ;",
+            "Wang Lijie ;",
+            "Gao Bo"
+        ],
+        "journal": "2010 International Conference on Logistics Systems and Intelligent Management (ICLSIM)",
+        "citations": "63",
+        "publish_date": "2010",
+        "keywords": [
+            "Diagnostic expert systems",
+            "Information security",
+            "National security",
+            "Construction industry",
+            "Communication system security",
+            "Accidents",
+            "Investments",
+            "Building materials",
+            "Technological innovation",
+            "Electronic mail",
+            "CBR",
+            "Construction",
+            "Producing Security",
+            "Diagnosing",
+            "Case Maintenance"
+        ],
+        "doi": "10.1109/ICLSIM.2010.5461217",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/7519715",
+        "title": "Issues of information security control in virtualization segment of company information system",
+        "authors": [
+            "Irina V. Mashkina ;",
+            "Murat B. Guzairov ;",
+            "Vladimir I. Vasilyev ;",
+            "Liliya R. Tuliganova ;",
+            "Andrei S. Konovalov"
+        ],
+        "journal": "2016 XIX IEEE International Conference on Soft Computing and Measurements (SCM)",
+        "citations": "4",
+        "publish_date": "2016",
+        "keywords": [
+            "Virtualization",
+            "Information security",
+            "Companies",
+            "Uniform resource locators",
+            "Virtual machine monitors",
+            "virtualization technologiy",
+            "information systems",
+            "information security",
+            "fuzzy cognitive map",
+            "security violation threats",
+            "virtual infrastructure",
+            "hypervisor",
+            "virtual machine",
+            "access delimitation model"
+        ],
+        "doi": "10.1109/SCM.2016.7519715",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/7588825",
+        "title": "Evaluation of Network Risk Using Attack Graph Based Security Metrics",
+        "authors": [
+            "Santosh Kumar ;",
+            "Anuradha Negi ;",
+            "Keshav Prasad ;",
+            "Aniket Mahanti"
+        ],
+        "journal": "2016 IEEE 14th Intl Conf on Dependable, Autonomic and Secure Computing, 14th Intl Conf on Pervasive Intelligence and Computing, 2nd Intl Conf on Big Data Intelligence and Computing and Cyber Science and Technology Congress(DASC/PiCom/DataCom/CyberSciTech)",
+        "citations": "406",
+        "publish_date": "2016",
+        "keywords": [
+            "Measurement",
+            "Databases",
+            "Computers",
+            "Protocols",
+            "Computer security",
+            "Privacy",
+            "Logical attack graph",
+            "Security metrics",
+            "Risk analysis"
+        ],
+        "doi": "10.1109/DASC-PICom-DataCom-CyberSciTec.2016.30",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/7366430",
+        "title": "Risk assessment method for cyber security of cyber physical systems",
+        "authors": [
+            "Wenbo Wu ;",
+            "Rui Kang ;",
+            "Zi Li"
+        ],
+        "journal": "2015 First International Conference on Reliability Systems Engineering (ICRSE)",
+        "citations": "1",
+        "publish_date": "2015",
+        "keywords": [
+            "Risk management",
+            "Security",
+            "Modeling",
+            "Real-time systems",
+            "Gold",
+            "Reliability engineering",
+            "Cyber physical system",
+            "cyber security",
+            "cyber-attack",
+            "risk assessment"
+        ],
+        "doi": "10.1109/ICRSE.2015.7366430",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "sciencedirect",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0167404814001011",
+        "title": "Cyber situational awareness \u2013 A systematic review of the literature",
+        "authors": [
+            {
+                "surname": "Franke",
+                "first_name": "Ulrik"
+            },
+            {
+                "surname": "Brynielsson",
+                "first_name": "Joel"
+            }
+        ],
+        "journal": "Computers & Security",
+        "citations": "102",
+        "publish_date": "2014",
+        "keywords": [
+            "Situational awareness",
+            "Cyber security",
+            "National cyber strategies",
+            "Research strategy",
+            "Literature review"
+        ],
+        "doi": "https://doi.org/10.1016/j.cose.2014.06.008",
+        "journal_impact_factor": "3.062"
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/4622566",
+        "title": "A Security Framework for Input Validation",
+        "authors": [
+            "Rafael Bosse Brinhosa ;",
+            "Carlos Becker Westphall ;",
+            "Carla Merkle Westphall"
+        ],
+        "journal": "2008 Second International Conference on Emerging Security Information, Systems and Technologies",
+        "citations": "2",
+        "publish_date": "2008",
+        "keywords": [
+            "XML",
+            "Security",
+            "Web services",
+            "Testing",
+            "Electronic mail",
+            "Educational institutions",
+            "Unified modeling language",
+            "Input Validation",
+            "Input Manipulation",
+            "Security",
+            "Web Applications",
+            "Web Services"
+        ],
+        "doi": "10.1109/SECURWARE.2008.67",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/6568374",
+        "title": "A Cyber Attack Modeling and Impact Assessment framework",
+        "authors": [
+            "Igor Kotenko ;",
+            "Andrey Chechulin"
+        ],
+        "journal": "2013 5th International Conference on Cyber Conflict (CYCON 2013)",
+        "citations": "3",
+        "publish_date": "2013",
+        "keywords": [
+            "Security",
+            "Computational modeling",
+            "Measurement",
+            "Real-time systems",
+            "Analytical models",
+            "Algorithm design and analysis",
+            "Prototypes",
+            "attack modeling",
+            "attack graphs",
+            "security metrics",
+            "impact assessment",
+            "anytime algorithms"
+        ],
+        "doi": null,
+        "journal_impact_factor": null
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/8709187",
+        "title": "Looking for a Black Cat in a Dark Room: Security Visualization for Cyber-Physical System Design and Analysis",
+        "authors": [
+            "Georgios Bakirtzis ;",
+            "Brandon J. Simon ;",
+            "Cody H. Fleming ;",
+            "Carl R. Elks"
+        ],
+        "journal": "2018 IEEE Symposium on Visualization for Cyber Security (VizSec)",
+        "citations": "105",
+        "publish_date": "2018",
+        "keywords": [
+            "Security",
+            "Analytical models",
+            "Tools",
+            "Visualization",
+            "Topology",
+            "Software",
+            "Human-centered computing",
+            "Visualization",
+            "Visualization techniques",
+            "Graph drawings",
+            "Human-centered computing",
+            "Visualization",
+            "Visualization systems and tools",
+            "Visualization toolkits",
+            "Security and privacy",
+            "Systems Security",
+            "Vulnerability management",
+            "Security and privacy",
+            "Security in hardware",
+            "Embedded systems security"
+        ],
+        "doi": "10.1109/VIZSEC.2018.8709187",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/7436688/keywords#keywords",
+        "title": "A Framework for Information Security Governance and Management",
+        "authors": [
+            "Marian Carcary ;",
+            "Karen Renaud ;",
+            "Stephen McLaughlin ;",
+            "Conor O'Brien"
+        ],
+        "journal": "IT Professional",
+        "citations": "6",
+        "publish_date": "2016",
+        "keywords": [],
+        "doi": "10.1109/MITP.2016.27",
+        "journal_impact_factor": "2.424"
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/7802924",
+        "title": "An interactive visual library model to improve awareness in handling of business information",
+        "authors": [
+            "Petrus M.J. Delport ;",
+            "Mariana Gerber ;",
+            "Nader S. Safa"
+        ],
+        "journal": "2016 Information Security for South Africa (ISSA)",
+        "citations": "87",
+        "publish_date": "2016",
+        "keywords": [
+            "Visualization",
+            "Libraries",
+            "Buildings",
+            "Companies",
+            "Information security",
+            "administrative employees",
+            "business information",
+            "sensitive data",
+            "awareness",
+            "threats"
+        ],
+        "doi": "10.1109/ISSA.2016.7802924",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "sciencedirect",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0950584915000646",
+        "title": "Guidelines for conducting systematic mapping studies in software engineering: An update",
+        "authors": [
+            {
+                "surname": "Petersen",
+                "first_name": "Kai"
+            },
+            {
+                "surname": "Vakkalanka",
+                "first_name": "Sairam"
+            },
+            {
+                "surname": "Kuzniarz",
+                "first_name": "Ludwik"
+            }
+        ],
+        "journal": "Information and Software Technology",
+        "citations": "334",
+        "publish_date": "2015",
+        "keywords": [
+            "Systematic mapping studies",
+            "Software engineering",
+            "Guidelines"
+        ],
+        "doi": "https://doi.org/10.1016/j.infsof.2015.03.007",
+        "journal_impact_factor": "2.921"
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/6578846",
+        "title": "Information visualization metrics and methods for cyber security evaluation",
+        "authors": [
+            "John T. Langton ;",
+            "Alex Baker"
+        ],
+        "journal": "2013 IEEE International Conference on Intelligence and Security Informatics",
+        "citations": "2",
+        "publish_date": "2013",
+        "keywords": [
+            "Data visualization",
+            "Computer security",
+            "Measurement",
+            "Complexity theory",
+            "Visual analytics",
+            "Accuracy",
+            "cyber security",
+            "information visualization",
+            "evaluation",
+            "visual analytics",
+            "human computer interaction",
+            "user study"
+        ],
+        "doi": "10.1109/ISI.2013.6578846",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "sciencedirect",
+        "url": "https://www.sciencedirect.com/science/article/pii/B9780123814791000022",
+        "title": "Getting to Know Your Data",
+        "authors": [
+            {
+                "surname": "Han",
+                "first_name": "Jiawei"
+            },
+            {
+                "surname": "Kamber",
+                "first_name": "Micheline"
+            },
+            {
+                "surname": "Pei",
+                "first_name": "Jian"
+            }
+        ],
+        "journal": "Data Mining (Third Edition)",
+        "citations": "1",
+        "publish_date": "39-82",
+        "keywords": [],
+        "doi": "https://doi.org/10.1016/B978-0-12-381479-1.00002-2",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/8626826",
+        "title": "Cyber Vulnerabilities on Smart Healthcare, Review and Solutions",
+        "authors": [
+            "Seyedmostafa Safavi ;",
+            "Ahmad Moaaz Meer ;",
+            "Ed Keneth Joel Melanie ;",
+            "Zarina Shukur"
+        ],
+        "journal": "2018 Cyber Resilience Conference (CRC)",
+        "citations": "310",
+        "publish_date": "2018",
+        "keywords": [
+            "Medical services",
+            "Smart homes",
+            "Blockchain",
+            "Internet of Things",
+            "Privacy",
+            "Computer crime",
+            "Cybersecurity",
+            "Internet of Things (IoT)",
+            "Malware",
+            "Data Breach/Privacy",
+            "Smart home",
+            "Smart Cities",
+            "Blockchain"
+        ],
+        "doi": "10.1109/CR.2018.8626826",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "sciencedirect",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0167404817302006",
+        "title": "Improving risk assessment model of cyber security using fuzzy logic inference system",
+        "authors": [
+            {
+                "surname": "Alali",
+                "first_name": "Mansour"
+            },
+            {
+                "surname": "Almogren",
+                "first_name": "Ahmad"
+            },
+            {
+                "surname": "Hassan",
+                "first_name": "Mohammad Mehedi"
+            },
+            {
+                "surname": "Rassan",
+                "first_name": "Iehab A.L."
+            },
+            {
+                "surname": "Bhuiyan",
+                "first_name": "Md Zakirul Alam"
+            }
+        ],
+        "journal": "Computers & Security",
+        "citations": "6",
+        "publish_date": "2018",
+        "keywords": [
+            "Cyber security",
+            "Cybercrime",
+            "Risk assessment model",
+            "Fuzzy logic inference",
+            "Risk factors evaluation"
+        ],
+        "doi": "https://doi.org/10.1016/j.cose.2017.09.011",
+        "journal_impact_factor": "3.062"
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/6246129",
+        "title": "Security metrics to improve misuse case model",
+        "authors": [
+            "Ala A. Abdulrazeg ;",
+            "Norita Md Norwawi ;",
+            "Nurlida Basir"
+        ],
+        "journal": "Proceedings Title: 2012 International Conference on Cyber Security, Cyber Warfare and Digital Forensic (CyberSec)",
+        "citations": "7",
+        "publish_date": "2012",
+        "keywords": [
+            "Software",
+            "Software measurement",
+            "Authentication",
+            "Electromagnetic compatibility",
+            "Object oriented modeling",
+            "Measurement",
+            "Security Metrics",
+            "Misuse case",
+            "Security Requirements",
+            "Web Application Security Risks"
+        ],
+        "doi": "10.1109/CyberSec.2012.6246129",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/8626831",
+        "title": "A Conceptual Framework of IT Security Governance and Internal Controls",
+        "authors": [
+            "Nadianatra Musa"
+        ],
+        "journal": "2018 Cyber Resilience Conference (CRC)",
+        "citations": "134",
+        "publish_date": "2018",
+        "keywords": [
+            "Security",
+            "Monitoring",
+            "Interviews",
+            "Companies",
+            "Risk management",
+            "Standards",
+            "IT Security Governance",
+            "Internal Controls",
+            "Formal Component",
+            "Informal Component",
+            "Technical Component"
+        ],
+        "doi": "10.1109/CR.2018.8626831",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/7335053",
+        "title": "A formal qualitative risk management approach for IT security",
+        "authors": [
+            "Bessy Mahopo ;",
+            "Hanifa Abdullah ;",
+            "Mathias Mujinga"
+        ],
+        "journal": "2015 Information Security for South Africa (ISSA)",
+        "citations": "503",
+        "publish_date": "2015",
+        "keywords": [
+            "Security",
+            "Market research",
+            "Europe",
+            "TV",
+            "Monitoring",
+            "Analytical models",
+            "IT security risk management",
+            "IT security risk analysis"
+        ],
+        "doi": "10.1109/ISSA.2015.7335053",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/7821828",
+        "title": "Designing a evaluation tool for IT security solution implementation for IT enterprises",
+        "authors": [
+            "Oskars Podzi\u0146\u0161 ;",
+            "Andrejs Rom\u0101novs"
+        ],
+        "journal": "2016 IEEE 4th Workshop on Advances in Information, Electronic and Electrical Engineering (AIEEE)",
+        "citations": "219",
+        "publish_date": "2016",
+        "keywords": [
+            "Companies",
+            "Computer security",
+            "Information security",
+            "Standards",
+            "Software",
+            "computer security",
+            "network security",
+            "security management",
+            "cyber security",
+            "ISO27001",
+            "IT enterprise",
+            "enterprise evaluation tool"
+        ],
+        "doi": "10.1109/AIEEE.2016.7821828",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/8338010",
+        "title": "Bad Security Metrics Part 2: Solutions",
+        "authors": [
+            "David Flater"
+        ],
+        "journal": "IT Professional",
+        "citations": "1",
+        "publish_date": "2018",
+        "keywords": [
+            "NIST",
+            "Measurement uncertainty",
+            "Computer security",
+            "Information security",
+            "Metrology",
+            "cybersecurity",
+            "metrics",
+            "measurement",
+            "metrology",
+            "IT Professional",
+            "security",
+            "security metrics"
+        ],
+        "doi": "10.1109/MITP.2018.021921653",
+        "journal_impact_factor": "2.424"
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/6061180",
+        "title": "Data Mining for Malicious Code Detection and Security Applications",
+        "authors": [
+            "Bhavani Thuraisingham"
+        ],
+        "journal": "2011 European Intelligence and Security Informatics Conference",
+        "citations": "1",
+        "publish_date": "2011",
+        "keywords": [
+            "Data mining",
+            "Educational institutions",
+            "Computer security",
+            "Computer science",
+            "Real time systems",
+            "Terrorism"
+        ],
+        "doi": "10.1109/EISIC.2011.80",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "sciencedirect",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0167739X18312081",
+        "title": "Framework for Calculating Return on Security Investment (ROSI) for Security-Oriented Organizations",
+        "authors": [
+            {
+                "surname": "Yaqoob",
+                "first_name": "Tahreem"
+            },
+            {
+                "surname": "Arshad",
+                "first_name": "Azka"
+            },
+            {
+                "surname": "Abbas",
+                "first_name": "Haider"
+            },
+            {
+                "surname": "Amjad",
+                "first_name": "Muhammad Faisal"
+            },
+            {
+                "surname": "Shafqat",
+                "first_name": "Narmeen"
+            }
+        ],
+        "journal": "Future Generation Computer Systems",
+        "citations": "5",
+        "publish_date": "2019",
+        "keywords": [
+            "ROSI calculations",
+            "CVSS",
+            "Information security",
+            "Annual loss",
+            "Investment decisions",
+            "Bayesian theorem"
+        ],
+        "doi": "https://doi.org/10.1016/j.future.2018.12.033",
+        "journal_impact_factor": "5.768"
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/6984212/keywords#keywords",
+        "title": "The Impact of Cyber Security Issues on Businesses and Governments: A Framework for Implementing a Cyber Security Plan",
+        "authors": [
+            "Hajar Iguer ;",
+            "Hicham Medromi ;",
+            "Adil Sayouti ;",
+            "Soukaina Elhasnaoui ;",
+            "Sophia Faris"
+        ],
+        "journal": "2014 International Conference on Future Internet of Things and Cloud",
+        "citations": "5",
+        "publish_date": "2014",
+        "keywords": [],
+        "doi": "10.1109/FiCloud.2014.56",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/6246110/keywords#keywords",
+        "title": "ST(CS)2 - Featuring socio-technical cyber security warning systems",
+        "authors": [
+            "Bilal Al Sabbagh ;",
+            "Stewart Kowalski"
+        ],
+        "journal": "Proceedings Title: 2012 International Conference on Cyber Security, Cyber Warfare and Digital Forensic (CyberSec)",
+        "citations": "5",
+        "publish_date": "2012",
+        "keywords": [],
+        "doi": "10.1109/CyberSec.2012.6246110",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/4140998",
+        "title": "A Metrics Framework to Drive Application Security Improvement",
+        "authors": [
+            "Elizabeth A. Nichols ;",
+            "Gunnar Peterson"
+        ],
+        "journal": "IEEE Security & Privacy",
+        "citations": "13",
+        "publish_date": "2007",
+        "keywords": [
+            "Computer security",
+            "Application software",
+            "Runtime",
+            "Authentication",
+            "Buildings",
+            "Buffer overflow",
+            "Drives",
+            "Privacy",
+            "Computer interfaces",
+            "HTML",
+            "metrics",
+            "life cycle",
+            "software development",
+            "software management",
+            "software engineering"
+        ],
+        "doi": "10.1109/MSP.2007.26",
+        "journal_impact_factor": "1.596"
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/5615046",
+        "title": "Expert-Aware Approach: A New Approach to Improve Network Security Visualization Tool",
+        "authors": [
+            "Doris Hooi-Ten Wong ;",
+            "Kok-Soon Chai ;",
+            "Sureswaran Ramadass ;",
+            "Nicolas Vavasseur"
+        ],
+        "journal": "2010 2nd International Conference on Computational Intelligence, Communication Systems and Networks",
+        "citations": "3",
+        "publish_date": "2010",
+        "keywords": [
+            "Data visualization",
+            "Security",
+            "Computers",
+            "Visualization",
+            "IP networks",
+            "Image color analysis",
+            "Spinning",
+            "network security visualization tool",
+            "network security awareness",
+            "expert-aware approach",
+            "high-dimensional data",
+            "two-dimensional",
+            "effectiveness",
+            "efficiency."
+        ],
+        "doi": "10.1109/CICSyN.2010.64",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/6516793",
+        "title": "Developing social metrics for security modeling the security culture of it workers individuals (case study)",
+        "authors": [
+            "Bilal Al Sabbagh ;",
+            "Stewart Kowalski"
+        ],
+        "journal": "The 5th International Conference on Communications, Computers and Applications (MIC-CCA2012)",
+        "citations": "208",
+        "publish_date": "2012",
+        "keywords": [
+            "Social Security Metrics",
+            "Security Mental Models",
+            "Security Culture",
+            "Risk Management",
+            "Security Controls"
+        ],
+        "doi": null,
+        "journal_impact_factor": null
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/4475760",
+        "title": "Security in Coding Phase of SDLC",
+        "authors": [
+            "R. Kumar ;",
+            "S. K. Pandey ;",
+            "S. I. Ahson"
+        ],
+        "journal": "2007 Third International Conference on Wireless Communication and Sensor Networks",
+        "citations": "2",
+        "publish_date": "2007",
+        "keywords": [
+            "Application software",
+            "Programming",
+            "Robustness",
+            "Protection",
+            "Computer hacking",
+            "Software systems",
+            "Computer science",
+            "System testing",
+            "Computer security",
+            "Aging",
+            "Software Security",
+            "Security Coding",
+            "Best Practices for Secure Coding"
+        ],
+        "doi": "10.1109/WCSN.2007.4475760",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/7503287",
+        "title": "Building an effective and efficient continuous web application security program",
+        "authors": [
+            "Mahesh Bang ;",
+            "Himanshu Saraswat"
+        ],
+        "journal": "2016 International Conference On Cyber Situational Awareness, Data Analytics And Assessment (CyberSA)",
+        "citations": "817",
+        "publish_date": "2016",
+        "keywords": [
+            "Security",
+            "Internet",
+            "Performance analysis",
+            "Testing",
+            "Manuals",
+            "Solids",
+            "Business",
+            "Application Security",
+            "Web Application Security Assessment",
+            "Security Metrics",
+            "Security Training",
+            "DAST",
+            "SAST",
+            "Risk Score Model"
+        ],
+        "doi": "10.1109/CyberSA.2016.7503287",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/8016712",
+        "title": "24765-2017 - ISO/IEC/IEEE International Standard - Systems and software engineering--Vocabulary",
+        "authors": [],
+        "journal": "NaJ",
+        "citations": "1",
+        "publish_date": "2017",
+        "keywords": [
+            "IEEE Standards",
+            "ISO Standards",
+            "IEC Standards",
+            "Informatino technology",
+            "Software engineering",
+            "Systems engineering and theoryt",
+            "Terminology",
+            "computer",
+            "dictionary",
+            "information technology",
+            "software engineering",
+            "systems engineering",
+            "24765"
+        ],
+        "doi": "10.1109/IEEESTD.2017.8016712",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/8428294",
+        "title": "Towards a tool for modeling the vulnerability of processes in project management in an industrial context",
+        "authors": [
+            "El Amrani Tarik ;",
+            "Ouardouz Mustapha ;",
+            "Amharref Mina ;",
+            "Bernoussi Abdessamad"
+        ],
+        "journal": "2018 International Colloquium on Logistics and Supply Chain Management (LOGISTIQUA)",
+        "citations": "27",
+        "publish_date": "2018",
+        "keywords": [
+            "Project management",
+            "Indexes",
+            "Risk management",
+            "Tools",
+            "Companies",
+            "Industries",
+            "Adaptation models",
+            "Project Management",
+            "Risks",
+            "Process &Vulnerability"
+        ],
+        "doi": "10.1109/LOGISTIQUA.2018.8428294",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/8109447/metrics#metrics",
+        "title": "How to design a method for measuring IT security in micro enterprises for IT security level measuring? A literature analysis",
+        "authors": [
+            "Michael Heidenreich"
+        ],
+        "journal": "2017 Communication and Information Technologies (KIT)",
+        "citations": "125",
+        "publish_date": "2017",
+        "keywords": [
+            "Companies",
+            "Information security",
+            "Standards",
+            "Data protection",
+            "Law",
+            "SME",
+            "IT-Security",
+            "Information Security",
+            "Metric"
+        ],
+        "doi": "10.23919/KIT.2017.8109447",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/8615162",
+        "title": "Educating and Raising Awareness on Cyber Security Social Engineering: A Literature Review",
+        "authors": [
+            "Hussain Aldawood ;",
+            "Geoffrey Skinner"
+        ],
+        "journal": "NaJ",
+        "citations": "773",
+        "publish_date": "2018",
+        "keywords": [
+            "Organizations",
+            "Phishing",
+            "Training",
+            "social engineering",
+            "phishing",
+            "anti-social engineering",
+            "cyber security awareness",
+            "information security awareness"
+        ],
+        "doi": "10.1109/TALE.2018.8615162",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/725713",
+        "title": "Ontology of organizational IT security awareness-from theoretical foundations to practical framework",
+        "authors": [
+            "M.T. Siponen ;",
+            "J. Kajava"
+        ],
+        "journal": "Proceedings Seventh IEEE International Workshop on Enabling Technologies: Infrastucture for Collaborative Enterprises (WET ICE '98) (Cat. No.98TB100253)",
+        "citations": "1",
+        "publish_date": "1998",
+        "keywords": [
+            "Ontologies",
+            "Computer errors",
+            "Security",
+            "Humans",
+            "Timing",
+            "Area measurement",
+            "Measurement standards",
+            "Target recognition",
+            "Management training",
+            "Application software"
+        ],
+        "doi": "10.1109/ENABL.1998.725713",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "sciencedirect",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0747563215000539",
+        "title": "Effects of cyber security knowledge on attack detection",
+        "authors": [
+            {
+                "surname": "Ben-Asher",
+                "first_name": "Noam"
+            },
+            {
+                "surname": "Gonzalez",
+                "first_name": "Cleotilde"
+            }
+        ],
+        "journal": "Computers in Human Behavior",
+        "citations": "61",
+        "publish_date": "2015",
+        "keywords": [
+            "Cyber security",
+            "Knowledge",
+            "Dynamic decision-making",
+            "Intrusion-detection system",
+            "Expertise"
+        ],
+        "doi": "https://doi.org/10.1016/j.chb.2015.01.039",
+        "journal_impact_factor": "4.306"
+    },
+    {
+        "database": "sciencedirect",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0167404818303080",
+        "title": "An integrated model for assessing cyber-safety behaviors: How cognitive, socioeconomic and digital determinants affect diverse safety practices",
+        "authors": [
+            {
+                "surname": "Dodel",
+                "first_name": "Matias"
+            },
+            {
+                "surname": "Mesch",
+                "first_name": "Gustavo"
+            }
+        ],
+        "journal": "Computers & Security",
+        "citations": "6",
+        "publish_date": "2019",
+        "keywords": [
+            "Cyber-safety",
+            "Preventive behavior",
+            "Health belief model",
+            "Digital inequalities",
+            "Path analysis",
+            "Israel"
+        ],
+        "doi": "https://doi.org/10.1016/j.cose.2019.05.023",
+        "journal_impact_factor": "3.062"
+    },
+    {
+        "database": "sciencedirect",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0167404818307478",
+        "title": "Threat modeling \u2013 A systematic literature review",
+        "authors": [
+            {
+                "surname": "Xiong",
+                "first_name": "Wenjun"
+            },
+            {
+                "surname": "Lagerstr\u00f6m",
+                "first_name": "Robert"
+            }
+        ],
+        "journal": "Computers & Security",
+        "citations": "46",
+        "publish_date": "2019",
+        "keywords": [
+            "Threat modeling",
+            "Literature review",
+            "Cyber security",
+            "Risk management",
+            "Cyber attacks"
+        ],
+        "doi": "https://doi.org/10.1016/j.cose.2019.03.010",
+        "journal_impact_factor": "3.062"
+    },
+    {
+        "database": "sciencedirect",
+        "url": "https://www.sciencedirect.com/science/article/pii/S2211368117300207",
+        "title": "See No Evil: Cognitive Challenges of Security Surveillance and Monitoring",
+        "authors": [
+            {
+                "surname": "Hodgetts",
+                "first_name": "Helen M."
+            },
+            {
+                "surname": "Vachon",
+                "first_name": "Fran\u00e7ois"
+            },
+            {
+                "surname": "Chamberland",
+                "first_name": "Cindy"
+            },
+            {
+                "surname": "Tremblay",
+                "first_name": "S\u00e9bastien"
+            }
+        ],
+        "journal": "Journal of Applied Research in Memory and Cognition",
+        "citations": "9",
+        "publish_date": "3",
+        "keywords": [
+            "Visual search",
+            "Dynamic decision-making",
+            "Information overload",
+            "Attentional failures",
+            "Distraction"
+        ],
+        "doi": "https://doi.org/10.1016/j.jarmac.2017.05.001",
+        "journal_impact_factor": "2.418"
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/6329197",
+        "title": "A Critical Survey of Security Indicator Approaches",
+        "authors": [
+            "Manuel Rudolph ;",
+            "Reinhard Schwarz"
+        ],
+        "journal": "2012 Seventh International Conference on Availability, Reliability and Security",
+        "citations": "7",
+        "publish_date": "2012",
+        "keywords": [
+            "Security",
+            "Classification tree analysis",
+            "Current measurement",
+            "Software",
+            "Standards",
+            "Terminology",
+            "IT security",
+            "IT security assurance",
+            "security metrics",
+            "security indicators"
+        ],
+        "doi": "10.1109/ARES.2012.10",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "sciencedirect",
+        "url": "https://www.sciencedirect.com/science/article/pii/S1084804516301060",
+        "title": "A survey of security issues for cloud computing",
+        "authors": [
+            {
+                "surname": "Khan",
+                "first_name": "Minhaj Ahmad"
+            }
+        ],
+        "journal": "Journal of Network and Computer Applications",
+        "citations": "77",
+        "publish_date": "2016",
+        "keywords": [
+            "Cloud security",
+            "Cloud computing",
+            "Denial-of-service",
+            "Security threats",
+            "Intrusion detection systems"
+        ],
+        "doi": "https://doi.org/10.1016/j.jnca.2016.05.010",
+        "journal_impact_factor": "5.273"
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/7921989",
+        "title": "A framework for measurability of security",
+        "authors": [
+            "Seraj Fayyad ;",
+            "Josef Noll"
+        ],
+        "journal": "2017 8th International Conference on Information and Communication Systems (ICICS)",
+        "citations": "1",
+        "publish_date": "2017",
+        "keywords": [
+            "Security",
+            "Measurement",
+            "Databases",
+            "Privacy",
+            "System analysis and design",
+            "Engines",
+            "Communication systems",
+            "Internet of Things",
+            "Multi-Metrics",
+            "security enhancement",
+            "security measurability",
+            "security evaluation",
+            "security function",
+            "security attribute",
+            "security metric"
+        ],
+        "doi": "10.1109/IACS.2017.7921989",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/5467019",
+        "title": "A Formal Approach Enabling Risk-Aware Business Process Modeling and Simulation",
+        "authors": [
+            "Simon Tjoa ;",
+            "Stefan Jakoubi ;",
+            "Gernot Goluch ;",
+            "Gerhard Kitzler ;",
+            "Sigrun Goluch ;",
+            "Gerald Quirchmayr"
+        ],
+        "journal": "IEEE Transactions on Services Computing",
+        "citations": "15",
+        "publish_date": "2010",
+        "keywords": [
+            "Security",
+            "Unified modeling language",
+            "Risk management",
+            "Computational modeling",
+            "Biological system modeling",
+            "Business continuity",
+            "Business process reengineering",
+            "consulting and strategic planning",
+            "security enablement methods and tools."
+        ],
+        "doi": "10.1109/TSC.2010.17",
+        "journal_impact_factor": "5.707"
+    },
+    {
+        "database": "ieeexplore",
+        "url": "https://ieeexplore.ieee.org/document/7367050",
+        "title": "The effectiveness of corporate culture toward information security incidents",
+        "authors": [
+            "Abdullah Almubark ;",
+            "Nobutoshi Hatanaka ;",
+            "Osamu Uchida ;",
+            "Yukiyo Ikeda"
+        ],
+        "journal": "2015 World Congress on Information Technology and Computer Applications (WCITCA)",
+        "citations": "133",
+        "publish_date": "2015",
+        "keywords": [
+            "Decision support systems",
+            "Information security",
+            "Employment",
+            "Information security",
+            "Security incident",
+            "corporate culture"
+        ],
+        "doi": "10.1109/WCITCA.2015.7367050",
+        "journal_impact_factor": null
+    },
+    {
+        "database": "sciencedirect",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0167404818308952",
+        "title": "An evaluation framework for network security visualizations",
+        "authors": [
+            {
+                "surname": "Sharafaldin",
+                "first_name": "Iman"
+            },
+            {
+                "surname": "Lashkari",
+                "first_name": "Arash Habibi"
+            },
+            {
+                "surname": "Ghorbani",
+                "first_name": "Ali A."
+            }
+        ],
+        "journal": "Computers & Security",
+        "citations": "1",
+        "publish_date": "2019",
+        "keywords": [
+            "Information visualization",
+            "Network attacks",
+            "Evaluation framework",
+            "Network security visualization",
+            "Network attack taxonomy"
+        ],
+        "doi": "https://doi.org/10.1016/j.cose.2019.03.005",
+        "journal_impact_factor": "3.062"
+    }
+]
