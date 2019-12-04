@@ -2,6 +2,17 @@
 # SciPy Metadata Analysis
 This repository extracts metadata information from scientifc papers throughout scientific databases with selenium
 
+Currently, these information is beeing pulled from the papers:
+- [X] Author names
+- [X] Paper Title
+- [X] DOI
+- [X] Keywords
+- [X] Publication Date
+- [X] Journalname
+- [X] Journal Impact Factor
+- [X] Amount of Citations
+
+
 ## Current objective
 Transform the project, so that the buildscript gets a file with a
 link list, determines the scientific database and extracts all
