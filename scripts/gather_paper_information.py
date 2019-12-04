@@ -56,10 +56,12 @@ def main():
         '--url_json',
         type=str,
         help='Takes a URL-JSON file with a list of links',
-        required='True'
     )
     parser.add_argument(
-        '--s',
+        '-s',
+        '--url_single',
+        type=str,
+        help='Takes a single url as input. Mostly used for testing purposes'
     )
     parser.add_argument(
         '-e',

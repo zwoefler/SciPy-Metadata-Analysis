@@ -336,3 +336,64 @@ class IEEEPaper(PaperMetaData):
                 exception)
 
         return impact_factor
+
+
+class SpringerLinkPaper(PaperMetaData):
+    """This is an abstract class for the meta information from scientific papers"""
+
+    def __init__(self, url, selenium_driver):
+        self.database = "springerlink"
+        self.url = url
+        self.title = self.get_title(selenium_driver)
+        # self.authors = self.get_authors(selenium_driver)
+        # self.journal = self.get_journal_name(selenium_driver)
+        # self.citations = self.get_citations_amount(selenium_driver)
+        # self.publish_date = self.get_publishing_date(selenium_driver)
+        # self.keywords = self.get_paper_keyword_list(selenium_driver)
+        # self.doi = self.get_paper_doi(selenium_driver)
+        # self.journal_impact_factor = self.get_journal_impact_factor(selenium_driver)
+
+    @abstractmethod
+    def get_title(self, selenium_driver):
+        """Returns the title of the paper"""
+        title_div = selenium_driver.find_element(
+            By.CLASS_NAME,
+            "ArticleTitle"
+        )
+        title_text = title_div.text
+        return title_text
+
+
+    @abstractmethod
+    def get_authors(self, selenium_driver):
+        """Returns the authors of the article"""
+
+
+    @abstractmethod
+    def get_journal_name(self, selenium_driver):
+        """Returns the name of the journal were the paper has been published"""
+
+
+    @abstractmethod
+    def get_journal_impact_factor(self, selenium_driver):
+        """Returns the Impact factor of the journal were the paper has been published"""
+
+
+    @abstractmethod
+    def get_citations_amount(self, selenium_driver):
+        """Returns the amount of citations of the given paper"""
+
+
+    @abstractmethod
+    def get_publishing_date(self, selenium_driver):
+        """Returns the Date of publishing"""
+
+
+    @abstractmethod
+    def get_paper_keyword_list(self, selenium_driver):
+        """Returns a list of the given keywords or None"""
+
+
+    @abstractmethod
+    def get_paper_doi(self, selenium_driver):
+        """Returns the DOI of the given paper"""
