@@ -379,13 +379,22 @@ class SpringerLinkPaper(PaperMetaData):
             "authors__name"
         )
         authors = [author.text for author in authors_names]
-        print(authors)
         return authors
 
 
     def get_journal_name(self, selenium_driver):
         """Returns the name of the journal were the paper has been published"""
-        return '0'
+        # Finds the first link in the enumeration div, which corresponds to
+        # the journal name
+        journal_info_div = selenium_driver.find_element(
+            By.CLASS_NAME,
+            "enumeration"
+        )
+        journal_name = journal_info_div.find_element(
+            By.TAG_NAME,
+            "a"
+        ).text
+        return journal_name
 
 
     def get_journal_impact_factor(self, selenium_driver):
