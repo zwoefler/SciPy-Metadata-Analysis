@@ -309,7 +309,7 @@ class IEEEPaper(PaperMetaData):
 
     def get_journal_impact_factor(self, selenium_driver):
         """Returns the Impact factor of the journal were the paper has been published"""
-        # Try except for when the jiournal is a conference paper
+        # Try except for when the journal is a conference paper
         # pylint: disable=pointless-statement
         # Pylint think *.location_once_scrolled_into_view is pointless
 
@@ -382,23 +382,33 @@ class SpringerLinkPaper(PaperMetaData):
         return authors
 
 
-    def get_journal_name(self, selenium_driver):
-        """Returns the name of the journal were the paper has been published"""
-        # Finds the first link in the enumeration div, which corresponds to
-        # the journal name
+    @staticmethod
+    def get_journal_link(selenium_driver):
+        """Return the link to a journal/book. Usually it also
+        consists of the exact name of the journal"""
         journal_info_div = selenium_driver.find_element(
             By.CLASS_NAME,
             "enumeration"
         )
-        journal_name = journal_info_div.find_element(
+        journal_link = journal_info_div.find_element(
             By.TAG_NAME,
             "a"
-        ).text
+        )
+        return journal_link
+
+
+    def get_journal_name(self, selenium_driver):
+        """Returns the name of the journal were the paper has been published"""
+        # Finds the first link in the enumeration div, which corresponds to
+        # the journal name
+        journal_name = self.get_journal_link(selenium_driver).text
+        print(journal_name)
         return journal_name
 
 
     def get_journal_impact_factor(self, selenium_driver):
         """Returns the Impact factor of the journal were the paper has been published"""
+
 
 
     def get_citations_amount(self, selenium_driver):

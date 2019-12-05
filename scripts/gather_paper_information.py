@@ -41,7 +41,6 @@ def switch_function_selecting_db_class(data_base, link, driver):
     if data_base == "springer.com":
         paper_info_obj = SpringerLinkPaper(link, driver)
 
-
     return paper_info_obj
 
 
