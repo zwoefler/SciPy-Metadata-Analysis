@@ -2,7 +2,7 @@
 import argparse
 import json
 from selenium import webdriver
-from database_classes import IEEEPaper, ScienceDirectPaper
+from database_classes import IEEEPaper, ScienceDirectPaper, SpringerLinkPaper
 
 JSON_EXPORT_LIST = []
 
@@ -21,7 +21,7 @@ def write_paper_parameters_to_json(parameter_dict, export_file_name):
 
 def get_scientific_database_name(link):
     """Returns the scientific database used, by extracting it from the link"""
-    supported_databases = ["sciencedirect", "ieeexplore"]
+    supported_databases = ["sciencedirect", "ieeexplore", "springer.com"]
     for data_base in supported_databases:
         if data_base in link:
             db_name = data_base
@@ -38,6 +38,9 @@ def switch_function_selecting_db_class(data_base, link, driver):
         paper_info_obj = IEEEPaper(link, driver)
     if data_base == "sciencedirect":
         paper_info_obj = ScienceDirectPaper(link, driver)
+    if data_base == "springer.com":
+        paper_info_obj = SpringerLinkPaper(link, driver)
+
 
     return paper_info_obj
 

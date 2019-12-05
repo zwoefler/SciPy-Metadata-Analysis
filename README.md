@@ -56,6 +56,7 @@ Since I already know the Pandas library for Python3, I wanted to gather the data
 - [ ] Link recognition, so that the script knows which class it needs to call
 - [X] ScienceDirect Integration
 - [X] IEEE Integration
+    - [ ] Remove semicolon from authors list
 - [ ] SpringerLink:
     - [ ] Author names
     - [ ] Paper Title
@@ -65,11 +66,13 @@ Since I already know the Pandas library for Python3, I wanted to gather the data
     - [ ] Journalname
     - [ ] Journal Impact Factor
     - [ ] Amount of Citations
+- [ ] PubMed
+- [ ] ACM Digital Library
 
 
 
 # Lessons Learned
-1. Improved my skills in Webscrapping with `Selenium`.
+1. Improved skills in Webscrapping with `Selenium`.
 2. `Beautiful Soup` is not suitable for dynamic (JavaScript generated) webpage content
 
 
