@@ -402,13 +402,26 @@ class SpringerLinkPaper(PaperMetaData):
         # Finds the first link in the enumeration div, which corresponds to
         # the journal name
         journal_name = self.get_journal_link(selenium_driver).text
-        print(journal_name)
         return journal_name
 
 
     def get_journal_impact_factor(self, selenium_driver):
         """Returns the Impact factor of the journal were the paper has been published"""
+        impact_factor = None
+        self.get_journal_link(selenium_driver).click()
 
+        try:
+            impact_factor = selenium_driver.find_element(
+                By.XPATH,
+                "/html/body/div[4]/div[3]/div/div[2]/div/div[2]/div[2]/ul/li[1]/span[2]"
+                ).text
+        except NoSuchElementException as exception:
+            impact_factor = None
+            print("Could not find the Impact factor for",
+                exception)
+        selenium_driver.back()
+
+        return impact_factor
 
 
     def get_citations_amount(self, selenium_driver):
@@ -421,7 +434,17 @@ class SpringerLinkPaper(PaperMetaData):
 
     def get_paper_keyword_list(self, selenium_driver):
         """Returns a list of the given keywords or None"""
+        keywords_list = selenium_driver.find_elements(
+            By.XPATH,
+            "//span[@class='Keyword']"
+        )
 
+        return [keyword.text.strip() for keyword in keywords_list]
 
     def get_paper_doi(self, selenium_driver):
         """Returns the DOI of the given paper"""
+        paper_doi = selenium_driver.find_element(
+            By.XPATH,
+            '//*[@id="doi-url"]'
+        ).text
+        return paper_doi
