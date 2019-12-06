@@ -427,6 +427,19 @@ class SpringerLinkPaper(PaperMetaData):
 
     def get_citations_amount(self, selenium_driver):
         """Returns the amount of citations of the given paper"""
+        citations = None
+
+        try:
+            citations= selenium_driver.find_element(
+                By.XPATH,
+                "//span[@id='citations-count-number']"
+            ).text
+            print("print it")
+        except NoSuchElementException as exception:
+            print("Could not find the amount of citations",
+            exception)
+
+        return citations
 
 
     def get_publishing_date(self, selenium_driver):
