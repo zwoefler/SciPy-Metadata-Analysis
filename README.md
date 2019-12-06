@@ -2,6 +2,17 @@
 # SciPy Metadata Analysis
 This repository extracts metadata information from scientifc papers throughout scientific databases with selenium
 
+Currently, these information is beeing pulled from the papers:
+- [X] Author names
+- [X] Paper Title
+- [X] DOI
+- [X] Keywords
+- [X] Publication Date
+- [X] Journalname
+- [X] Journal Impact Factor
+- [X] Amount of Citations
+
+
 ## Current objective
 Transform the project, so that the buildscript gets a file with a
 link list, determines the scientific database and extracts all
@@ -45,6 +56,7 @@ Since I already know the Pandas library for Python3, I wanted to gather the data
 - [ ] Link recognition, so that the script knows which class it needs to call
 - [X] ScienceDirect Integration
 - [X] IEEE Integration
+    - [ ] Remove semicolon from authors list
 - [ ] SpringerLink:
     - [ ] Author names
     - [ ] Paper Title
@@ -54,11 +66,13 @@ Since I already know the Pandas library for Python3, I wanted to gather the data
     - [ ] Journalname
     - [ ] Journal Impact Factor
     - [ ] Amount of Citations
+- [ ] PubMed
+- [ ] ACM Digital Library
 
 
 
 # Lessons Learned
-1. Improved my skills in Webscrapping with `Selenium`.
+1. Improved skills in Webscrapping with `Selenium`.
 2. `Beautiful Soup` is not suitable for dynamic (JavaScript generated) webpage content
 
 

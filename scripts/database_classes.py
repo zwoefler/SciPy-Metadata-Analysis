@@ -5,6 +5,7 @@ their papers there need to be different ways of retreiving the data"""
 
 
 from abc import ABCMeta, abstractmethod
+import re
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
@@ -309,7 +310,7 @@ class IEEEPaper(PaperMetaData):
 
     def get_journal_impact_factor(self, selenium_driver):
         """Returns the Impact factor of the journal were the paper has been published"""
-        # Try except for when the jiournal is a conference paper
+        # Try except for when the journal is a conference paper
         # pylint: disable=pointless-statement
         # Pylint think *.location_once_scrolled_into_view is pointless
 
@@ -336,3 +337,141 @@ class IEEEPaper(PaperMetaData):
                 exception)
 
         return impact_factor
+
+
+class SpringerLinkPaper(PaperMetaData):
+    """Extract Meta Information from SpringerLink papers"""
+
+    def __init__(self, url, selenium_driver):
+        self.database = "springerlink"
+        self.url = url
+        self.title = self.get_title(selenium_driver)
+        self.authors = self.get_authors(selenium_driver)
+        self.journal = self.get_journal_name(selenium_driver)
+        self.citations = self.get_citations_amount(selenium_driver)
+        self.publish_date = self.get_publishing_date(selenium_driver)
+        self.keywords = self.get_paper_keyword_list(selenium_driver)
+        self.doi = self.get_paper_doi(selenium_driver)
+        self.journal_impact_factor = self.get_journal_impact_factor(selenium_driver)
+
+
+    def get_title(self, selenium_driver):
+        """Returns the title of the paper"""
+        title_div = selenium_driver.find_element(
+            By.CLASS_NAME,
+            "MainTitleSection"
+        )
+        title_text = title_div.find_element(
+            By.TAG_NAME,
+            "h1"
+        ).text
+        return title_text
+
+
+    def get_authors(self, selenium_driver):
+        """Returns the authors of the article as a list"""
+        authors = []
+        authors_div = selenium_driver.find_element(
+            By.CLASS_NAME,
+            "authors__list"
+        )
+        authors_names = authors_div.find_elements(
+            By.CLASS_NAME,
+            "authors__name"
+        )
+        authors = [author.text for author in authors_names]
+        return authors
+
+
+    @staticmethod
+    def get_journal_link(selenium_driver):
+        """Return the link to a journal/book. Usually it also
+        consists of the exact name of the journal"""
+        journal_info_div = selenium_driver.find_element(
+            By.CLASS_NAME,
+            "enumeration"
+        )
+        journal_link = journal_info_div.find_element(
+            By.TAG_NAME,
+            "a"
+        )
+        return journal_link
+
+
+    def get_journal_name(self, selenium_driver):
+        """Returns the name of the journal were the paper has been published"""
+        # Finds the first link in the enumeration div, which corresponds to
+        # the journal name
+        journal_name = self.get_journal_link(selenium_driver).text
+        return journal_name
+
+
+    def get_journal_impact_factor(self, selenium_driver):
+        """Returns the Impact factor of the journal were the paper has been published"""
+        impact_factor = None
+        self.get_journal_link(selenium_driver).click()
+
+        try:
+            impact_factor = selenium_driver.find_element(
+                By.XPATH,
+                "/html/body/div[4]/div[3]/div/div[2]/div/div[2]/div[2]/ul/li[1]/span[2]"
+                ).text
+        except NoSuchElementException as exception:
+            impact_factor = None
+            print("Could not find the Impact factor for",
+                  exception)
+        selenium_driver.back()
+
+        return impact_factor
+
+
+    def get_citations_amount(self, selenium_driver):
+        """Returns the amount of citations of the given paper"""
+        citations = None
+
+        try:
+            citations = selenium_driver.find_element(
+                By.XPATH,
+                "//span[@id='citations-count-number']"
+            ).text
+            print("print it")
+        except NoSuchElementException as exception:
+            print("Could not find the amount of citations",
+                  exception)
+
+        return citations
+
+
+    def get_publishing_date(self, selenium_driver):
+        """Returns the Date of publishing. Finds the Regex of four
+        digits in brackets in the 'Cite as' text"""
+        pub_year_regex = re.compile(r"\((\d{4})\)")
+
+        cite_text = selenium_driver.find_element(
+            By.ID,
+            "citethis-text"
+        ).text
+
+        year_in_brackets = pub_year_regex.search(cite_text)
+        pub_year = year_in_brackets.group().strip('()')
+
+        return pub_year
+
+
+
+    def get_paper_keyword_list(self, selenium_driver):
+        """Returns a list of the given keywords or None"""
+        keywords_list = selenium_driver.find_elements(
+            By.XPATH,
+            "//span[@class='Keyword']"
+        )
+
+        return [keyword.text.strip() for keyword in keywords_list]
+
+    def get_paper_doi(self, selenium_driver):
+        """Returns the DOI of the given paper"""
+        paper_doi = selenium_driver.find_element(
+            By.XPATH,
+            '//*[@id="doi-url"]'
+        ).text
+        return paper_doi
