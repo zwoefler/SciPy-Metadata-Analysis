@@ -5,11 +5,11 @@ their papers there need to be different ways of retreiving the data"""
 
 
 from abc import ABCMeta, abstractmethod
+import re
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import TimeoutException, NoSuchElementException
-import re
 
 class PaperMetaData(metaclass=ABCMeta):
     """This is an abstract class for the meta information from scientific papers"""
@@ -419,7 +419,7 @@ class SpringerLinkPaper(PaperMetaData):
         except NoSuchElementException as exception:
             impact_factor = None
             print("Could not find the Impact factor for",
-                exception)
+                  exception)
         selenium_driver.back()
 
         return impact_factor
@@ -430,14 +430,14 @@ class SpringerLinkPaper(PaperMetaData):
         citations = None
 
         try:
-            citations= selenium_driver.find_element(
+            citations = selenium_driver.find_element(
                 By.XPATH,
                 "//span[@id='citations-count-number']"
             ).text
             print("print it")
         except NoSuchElementException as exception:
             print("Could not find the amount of citations",
-            exception)
+                  exception)
 
         return citations
 
@@ -445,7 +445,7 @@ class SpringerLinkPaper(PaperMetaData):
     def get_publishing_date(self, selenium_driver):
         """Returns the Date of publishing. Finds the Regex of four
         digits in brackets in the 'Cite as' text"""
-        pub_year_regex = re.compile("\((\d{4})\)")
+        pub_year_regex = re.compile(r"\((\d{4})\)")
 
         cite_text = selenium_driver.find_element(
             By.ID,
