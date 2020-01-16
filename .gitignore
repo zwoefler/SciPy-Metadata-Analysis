@@ -8,3 +8,5 @@ scripts/__pycache__/database_classes.cpython-36.pyc
 ./vscode/*
 resources/database_urls.json
 meta_data.json
+Dev/
+.vscode/

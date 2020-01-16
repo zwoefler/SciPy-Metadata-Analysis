@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/zwoefler/SciPy-Metadata-Analysis.svg?branch=master)](https://travis-ci.org/zwoefler/SciPy-Metadata-Analysis)
 # SciPy Metadata Analysis
-This repository extracts metadata information from scientifc papers throughout scientific databases with selenium
+This repository extracts metadata information from scientifc papers throughout scientific databases with Selenium, without using APIs.
 
 Currently, these information is beeing pulled from the papers:
 - [X] Author names
@@ -12,16 +12,20 @@ Currently, these information is beeing pulled from the papers:
 - [X] Journal Impact Factor
 - [X] Amount of Citations
 
+Following Databases are supported:
+- [X] ScienceDirect
+- [X] SpringerLink
+- [X] IEEEXplore
+
 
 ## Current objective
 Transform the project, so that the buildscript gets a file with a
-link list, determines the scientific database and extracts all
+list of links, determines the scientific database and extracts all
 relevant metadata into a json-file, containing all the meta information.
 Automatically make some analysis regarding the gathered data. Such as correlations for authors and keywords or so.
 
 ## Goal
-The goal is to learn and use [Selenium](https://selenium-python.readthedocs.io/) for webscrapping and deepen the knowledge of Python3.
-Also to support my bachelor thesis.
+The goal is to learn and use [Selenium](https://selenium-python.readthedocs.io/) for webscrapping and expand my knowledge of Python3.
 
 
 ## Usage
@@ -36,7 +40,7 @@ Also to support my bachelor thesis.
 5. Install selenium:
     - Since Selenium is already installed with the `requirements.txt` you just need
     your browser driver. Download one of the following drivers and place it in your
-    `/usr/bin` directory to be available from everywher:
+    `/usr/bin` directory to be available from everywhere:
 
     |Browser | Link                                                                     |
     |--------|--------------------------------------------------------------------------|

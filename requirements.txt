@@ -2,3 +2,4 @@ pylint==2.3
 selenium
 bs4
 pandas
+notebook
