@@ -357,29 +357,46 @@ class SpringerLinkPaper(PaperMetaData):
 
     def get_title(self, selenium_driver):
         """Returns the title of the paper"""
-        title_div = selenium_driver.find_element(
-            By.CLASS_NAME,
-            "MainTitleSection"
-        )
-        title_text = title_div.find_element(
-            By.TAG_NAME,
-            "h1"
-        ).text
+        # Try to find eather MainTitleSection or
+        possible_title_segments = ["//h1[@class='c-article-title u-h1']",
+                                   "//h1[@class='ChapterTitle']"]
+
+        for possibility in possible_title_segments:
+            try:
+                title_text = selenium_driver.find_element(
+                    By.XPATH,
+                    possibility
+                ).text
+                break
+            except :
+                title_text = None
+            
         return title_text
 
 
     def get_authors(self, selenium_driver):
-        """Returns the authors of the article as a list"""
+        """Returns the authors of the article as a list"""        
+        author_possibilities = ["//div[@class='authors__list']",
+                                "//ul[@class='c-author-list js-list-authors js-etal-collapsed']"]
+        name_element_possibilities = ["//span[@class='authors__name']",
+                                      "//span[@li='c-author-list__item']"]
+
         authors = []
-        authors_div = selenium_driver.find_element(
-            By.CLASS_NAME,
-            "authors__list"
-        )
-        authors_names = authors_div.find_elements(
-            By.CLASS_NAME,
-            "authors__name"
-        )
-        authors = [author.text for author in authors_names]
+        for authors_list, author_name in zip(author_possibilities, name_element_possibilities):
+            try:
+                authors_div = selenium_driver.find_element(
+                    By.XPATH,
+                    authors_list
+                )
+                authors_names = authors_div.find_elements(
+                    By.XPATH,
+                    author_name
+                )
+                authors = [author.text for author in authors_names]
+                break
+            except:
+                authors = None
+        
         return authors
 
 
