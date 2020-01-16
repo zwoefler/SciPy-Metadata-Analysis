@@ -368,14 +368,15 @@ class SpringerLinkPaper(PaperMetaData):
                     possibility
                 ).text
                 break
-            except :
+            except NoSuchElementException:
                 title_text = None
-            
+
         return title_text
 
 
     def get_authors(self, selenium_driver):
-        """Returns the authors of the article as a list"""        
+        """Returns the authors of the article as a list"""
+
         author_possibilities = ["//div[@class='authors__list']",
                                 "//ul[@class='c-author-list js-list-authors js-etal-collapsed']"]
         name_element_possibilities = ["//span[@class='authors__name']",
@@ -394,9 +395,9 @@ class SpringerLinkPaper(PaperMetaData):
                 )
                 authors = [author.text for author in authors_names]
                 break
-            except:
+            except NoSuchElementException:
                 authors = None
-        
+
         return authors
 
 
